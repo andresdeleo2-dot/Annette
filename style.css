@@ -245,6 +245,43 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .nav__link--cta:hover { background: var(--gold-light); }
 
+/* Agrupador derecho del header (lang toggle + hamburger) */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Botón de idioma */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1.5px solid rgba(255,255,255,.25);
+  color: rgba(255,255,255,.7);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  cursor: pointer;
+  transition: var(--ease);
+  background: transparent;
+}
+.lang-toggle:hover {
+  border-color: var(--gold);
+  color: var(--white);
+}
+/* La opción activa se resalta */
+.lang-toggle__es,
+.lang-toggle__en { transition: var(--ease); }
+
+[data-lang="es"] .lang-toggle__es { color: var(--gold); }
+[data-lang="en"] .lang-toggle__en { color: var(--gold); }
+
+.lang-toggle__sep { opacity: .35; font-weight: 300; }
+
 /* Hamburguesa */
 .hamburger {
   display: none;
