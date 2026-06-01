@@ -10,9 +10,9 @@
   --navy-mid:   #132238;
   --navy-light: #1e3554;
   --navy-glow:  rgba(30, 53, 84, 0.6);
-  --gold:       #b59450;
-  --gold-light: #cfad72;
-  --gold-pale:  rgba(181, 148, 80, 0.12);
+  --gold:       #8b9b26;   /* color real del logo */
+  --gold-light: #a3b530;
+  --gold-pale:  rgba(139, 155, 38, 0.12);
   --white:      #ffffff;
   --off-white:  #f7f5f0;
   --gray-100:   #eeece8;
@@ -189,25 +189,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
 }
 
-.logo__mark {
-  width: 42px; height: 42px;
-  border-radius: var(--r-sm);
-  border: 1.5px solid var(--gold);
-  background: transparent;
-  color: var(--gold);
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: .05em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Logo — imagen real PNG con fondo transparente */
+.logo__img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
   flex-shrink: 0;
-  transition: var(--ease);
+  transition: filter var(--ease), transform var(--ease);
 }
-.logo:hover .logo__mark { background: var(--gold); color: var(--white); }
+.logo:hover .logo__img { filter: brightness(1.2); transform: scale(1.06); }
 
-.logo__mark--sm { width: 36px; height: 36px; font-size: .875rem; }
+.logo__img--footer {
+  width: 36px;
+  height: 36px;
+}
 
 .logo__text { display: flex; flex-direction: column; line-height: 1; }
 
