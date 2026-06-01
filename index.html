@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es-MX" data-lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +10,13 @@
   <meta name="keywords" content="abogados México, firma legal CDMX, derecho corporativo, arbitraje, fiscal, laboral, comercio exterior, CAPÍN CONSULTORES" />
   <meta name="author" content="CAPÍN CONSULTORES, S.C." />
 
-  <!-- Favicon — PNG funciona en todos los navegadores modernos -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="logo-capin.png" />
   <link rel="apple-touch-icon" href="logo-capin.png" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="CAPÍN CONSULTORES, S.C. | Firma de Abogados" />
-  <meta property="og:description" content="Firma de Abogados con presencia en México y París. Más de 16 áreas de práctica con los más altos estándares de calidad y oportunidad." />
+  <meta property="og:description" content="Firma de Abogados con presencia en México y París. Más de 16 áreas de práctica." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="logo-capin.png" />
 
@@ -43,18 +43,27 @@
 
       <nav class="nav" id="nav" aria-label="Navegación principal">
         <ul class="nav__list">
-          <li><a href="#quienes-somos" class="nav__link">Quiénes Somos</a></li>
-          <li><a href="#adn" class="nav__link">Nuestro ADN</a></li>
-          <li><a href="#areas" class="nav__link">Áreas de Práctica</a></li>
-          <li><a href="#integrantes" class="nav__link">Integrantes</a></li>
-          <li><a href="#alianzas" class="nav__link">Alianzas</a></li>
-          <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+          <li><a href="#quienes-somos" class="nav__link" data-i18n="nav.about">Quiénes Somos</a></li>
+          <li><a href="#adn" class="nav__link" data-i18n="nav.adn">Nuestro ADN</a></li>
+          <li><a href="#areas" class="nav__link" data-i18n="nav.areas">Áreas de Práctica</a></li>
+          <li><a href="#integrantes" class="nav__link" data-i18n="nav.team">Integrantes</a></li>
+          <li><a href="#alianzas" class="nav__link" data-i18n="nav.alliances">Alianzas</a></li>
+          <li><a href="#contacto" class="nav__link nav__link--cta" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </nav>
 
-      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header__right">
+        <!-- Toggle idioma -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-toggle__es">EN</span>
+          <span class="lang-toggle__sep" aria-hidden="true">|</span>
+          <span class="lang-toggle__en">ES</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
     </div>
   </header>
@@ -69,39 +78,39 @@
       </div>
 
       <div class="container hero__content">
-        <div class="hero__badge">Firma de Abogados · México &amp; París</div>
+        <div class="hero__badge" data-i18n="hero.badge">Firma de Abogados · México &amp; París</div>
         <h1 class="hero__title">
           <span class="hero__title-top">CAPÍN</span>
           <span class="hero__title-main">CONSULTORES</span>
           <span class="hero__title-sc">S.C.</span>
         </h1>
-        <p class="hero__tagline">Los más altos estándares de calidad en el marco jurídico de México y el extranjero</p>
+        <p class="hero__tagline" data-i18n="hero.tagline">Los más altos estándares de calidad en el marco jurídico de México y el extranjero</p>
         <div class="hero__actions">
-          <a href="#areas" class="btn btn--primary">Áreas de práctica</a>
-          <a href="#contacto" class="btn btn--ghost">Contactar ahora</a>
+          <a href="#areas" class="btn btn--primary" data-i18n="hero.cta1">Áreas de práctica</a>
+          <a href="#contacto" class="btn btn--ghost" data-i18n="hero.cta2">Contactar ahora</a>
         </div>
 
-        <div class="hero__pillars" aria-label="Pilares del despacho">
+        <div class="hero__pillars">
           <div class="hero__pillar">
             <span class="hero__pillar-icon" aria-hidden="true">⚖</span>
-            <span>Profesionalismo</span>
+            <span data-i18n="hero.pillar1">Profesionalismo</span>
           </div>
           <div class="hero__pillar-div" aria-hidden="true"></div>
           <div class="hero__pillar">
             <span class="hero__pillar-icon" aria-hidden="true">🌐</span>
-            <span>Cobertura Internacional</span>
+            <span data-i18n="hero.pillar2">Cobertura Internacional</span>
           </div>
           <div class="hero__pillar-div" aria-hidden="true"></div>
           <div class="hero__pillar">
             <span class="hero__pillar-icon" aria-hidden="true">🛡</span>
-            <span>Servicio Integral</span>
+            <span data-i18n="hero.pillar3">Servicio Integral</span>
           </div>
         </div>
       </div>
 
       <a href="#quienes-somos" class="hero__scroll" aria-label="Ir a quiénes somos">
         <span class="hero__scroll-line" aria-hidden="true"></span>
-        <span class="hero__scroll-text">Conocer más</span>
+        <span class="hero__scroll-text" data-i18n="hero.scroll">Conocer más</span>
       </a>
     </section>
 
@@ -112,10 +121,10 @@
         <div class="qs-intro reveal">
           <div class="qs-intro__label" aria-hidden="true">01</div>
           <div class="qs-intro__body">
-            <p class="section__eyebrow">Quiénes Somos</p>
-            <h2 class="section__title" id="qs-title">Una firma con experiencia, visión y alcance global</h2>
-            <p class="qs-intro__lead">CAPÍN CONSULTORES S.C. es una Firma de Abogados con gran experiencia profesional que le permite brindar a sus clientes los más altos estándares de calidad y oportunidad en sus servicios, permitiendo con ello el desarrollo dentro del marco jurídico en México y en el extranjero, ayudándolos a posicionarse como empresas de clase mundial en los diferentes mercados en que se desarrollan.</p>
-            <p class="qs-intro__sub">Nuestra filosofía está inspirada en valores éticos y de servicio, garantizando la confianza depositada por nuestros clientes.</p>
+            <p class="section__eyebrow" data-i18n="qs.eyebrow">Quiénes Somos</p>
+            <h2 class="section__title" id="qs-title" data-i18n="qs.title">Una firma con experiencia, visión y alcance global</h2>
+            <p class="qs-intro__lead" data-i18n="qs.lead">CAPÍN CONSULTORES S.C. es una Firma de Abogados con gran experiencia profesional que le permite brindar a sus clientes los más altos estándares de calidad y oportunidad en sus servicios, permitiendo con ello el desarrollo dentro del marco jurídico en México y en el extranjero, ayudándolos a posicionarse como empresas de clase mundial en los diferentes mercados en que se desarrollan.</p>
+            <p class="qs-intro__sub" data-i18n="qs.sub">Nuestra filosofía está inspirada en valores éticos y de servicio, garantizando la confianza depositada por nuestros clientes.</p>
           </div>
         </div>
 
@@ -124,22 +133,22 @@
           <article class="qs-card reveal reveal-delay-1">
             <div class="qs-card__number" aria-hidden="true">I</div>
             <div class="qs-card__icon" aria-hidden="true">🏛</div>
-            <h3 class="qs-card__title">Profesionalismo</h3>
-            <p class="qs-card__text">Las áreas en las que la Firma desempeña sus actividades se encuentran dirigidas por profesionistas con estándares de conocimiento y probidad de primer nivel, los cuales han participado en distintos foros, tanto nacionales como internacionales, así como en la impartición de importantes cátedras en prestigiadas universidades.</p>
+            <h3 class="qs-card__title" data-i18n="qs.p1.title">Profesionalismo</h3>
+            <p class="qs-card__text" data-i18n="qs.p1.text">Las áreas en las que la Firma desempeña sus actividades se encuentran dirigidas por profesionistas con estándares de conocimiento y probidad de primer nivel, los cuales han participado en distintos foros, tanto nacionales como internacionales, así como en la impartición de importantes cátedras en prestigiadas universidades.</p>
           </article>
 
           <article class="qs-card reveal reveal-delay-2">
             <div class="qs-card__number" aria-hidden="true">II</div>
             <div class="qs-card__icon" aria-hidden="true">🔄</div>
-            <h3 class="qs-card__title">Servicio Integral</h3>
-            <p class="qs-card__text">Prestamos un servicio que comprende tanto los aspectos preventivos como los correctivos, frente a las necesidades particulares de nuestros clientes, asegurándoles estabilidad y anticipándonos a las posibles contingencias que pudieran surgir en la operación de sus negocios.</p>
+            <h3 class="qs-card__title" data-i18n="qs.p2.title">Servicio Integral</h3>
+            <p class="qs-card__text" data-i18n="qs.p2.text">Prestamos un servicio que comprende tanto los aspectos preventivos como los correctivos, frente a las necesidades particulares de nuestros clientes, asegurándoles estabilidad y anticipándonos a las posibles contingencias que pudieran surgir en la operación de sus negocios.</p>
           </article>
 
           <article class="qs-card reveal reveal-delay-3">
             <div class="qs-card__number" aria-hidden="true">III</div>
             <div class="qs-card__icon" aria-hidden="true">🌍</div>
-            <h3 class="qs-card__title">Cobertura</h3>
-            <p class="qs-card__text">CAPÍN CONSULTORES, S.C. desempeña un papel importante y de gran influencia, tanto en México como en el extranjero, contando con una <strong>oficina en París, Francia</strong>, y diversas alianzas estratégicas con firmas independientes en la República Mexicana y alrededor del mundo.</p>
+            <h3 class="qs-card__title" data-i18n="qs.p3.title">Cobertura</h3>
+            <p class="qs-card__text" data-i18n="qs.p3.text">CAPÍN CONSULTORES, S.C. desempeña un papel importante y de gran influencia, tanto en México como en el extranjero, contando con una <strong>oficina en París, Francia</strong>, y diversas alianzas estratégicas con firmas independientes en la República Mexicana y alrededor del mundo.</p>
           </article>
 
         </div>
@@ -151,9 +160,9 @@
       <div class="adn-section__bg" aria-hidden="true"></div>
       <div class="container">
         <div class="section__header reveal">
-          <p class="section__eyebrow section__eyebrow--light">02</p>
-          <h2 class="section__title section__title--light" id="adn-title">Nuestro ADN</h2>
-          <p class="section__subtitle section__subtitle--light">Los principios que guían cada decisión y cada servicio que brindamos.</p>
+          <p class="section__eyebrow section__eyebrow--light" data-i18n="adn.eyebrow">02</p>
+          <h2 class="section__title section__title--light" id="adn-title" data-i18n="adn.title">Nuestro ADN</h2>
+          <p class="section__subtitle section__subtitle--light" data-i18n="adn.subtitle">Los principios que guían cada decisión y cada servicio que brindamos.</p>
         </div>
 
         <div class="adn-grid">
@@ -161,41 +170,41 @@
           <article class="adn-card reveal reveal-delay-1">
             <div class="adn-card__header">
               <span class="adn-card__letter" aria-hidden="true">S</span>
-              <h3 class="adn-card__title">Sinergia</h3>
+              <h3 class="adn-card__title" data-i18n="adn.v1.title">Sinergia</h3>
             </div>
-            <p class="adn-card__text">Con una eficiente comunicación y profunda colaboración, aprovechamos la experiencia de cada uno de nuestros integrantes en su correspondiente área de especialización, en favor de los requerimientos específicos de nuestros clientes.</p>
+            <p class="adn-card__text" data-i18n="adn.v1.text">Con una eficiente comunicación y profunda colaboración, aprovechamos la experiencia de cada uno de nuestros integrantes en su correspondiente área de especialización, en favor de los requerimientos específicos de nuestros clientes.</p>
           </article>
 
           <article class="adn-card reveal reveal-delay-2">
             <div class="adn-card__header">
               <span class="adn-card__letter" aria-hidden="true">V</span>
-              <h3 class="adn-card__title">Vanguardia</h3>
+              <h3 class="adn-card__title" data-i18n="adn.v2.title">Vanguardia</h3>
             </div>
-            <p class="adn-card__text">Estamos permanentemente actualizados, tanto en las reformas de ley y criterios judiciales, como en las innovaciones tecnológicas y de servicio, para ofrecer la mejor estrategia posible, brindando con ello la atención más completa y adecuada.</p>
+            <p class="adn-card__text" data-i18n="adn.v2.text">Estamos permanentemente actualizados, tanto en las reformas de ley y criterios judiciales, como en las innovaciones tecnológicas y de servicio, para ofrecer la mejor estrategia posible, brindando con ello la atención más completa y adecuada.</p>
           </article>
 
           <article class="adn-card reveal reveal-delay-3">
             <div class="adn-card__header">
               <span class="adn-card__letter" aria-hidden="true">R</span>
-              <h3 class="adn-card__title">Respuesta</h3>
+              <h3 class="adn-card__title" data-i18n="adn.v3.title">Respuesta</h3>
             </div>
-            <p class="adn-card__text">En todo momento, en horarios de oficina o fuera de ellos, estamos disponibles para atender los requerimientos de nuestros clientes y proponer una solución a sus problemas.</p>
+            <p class="adn-card__text" data-i18n="adn.v3.text">En todo momento, en horarios de oficina o fuera de ellos, estamos disponibles para atender los requerimientos de nuestros clientes y proponer una solución a sus problemas.</p>
           </article>
 
           <article class="adn-card reveal reveal-delay-4">
             <div class="adn-card__header">
               <span class="adn-card__letter" aria-hidden="true">P</span>
-              <h3 class="adn-card__title">Prontitud</h3>
+              <h3 class="adn-card__title" data-i18n="adn.v4.title">Prontitud</h3>
             </div>
-            <p class="adn-card__text">Llevamos cada asunto con la mayor agilidad posible, aprovechando al máximo todos los recursos a nuestro alcance para ofrecer un desempeño eficiente.</p>
+            <p class="adn-card__text" data-i18n="adn.v4.text">Llevamos cada asunto con la mayor agilidad posible, aprovechando al máximo todos los recursos a nuestro alcance para ofrecer un desempeño eficiente.</p>
           </article>
 
           <article class="adn-card adn-card--featured reveal reveal-delay-5">
             <div class="adn-card__header">
               <span class="adn-card__letter" aria-hidden="true">G</span>
-              <h3 class="adn-card__title">Garantía</h3>
+              <h3 class="adn-card__title" data-i18n="adn.v5.title">Garantía</h3>
             </div>
-            <p class="adn-card__text">Contamos con un Departamento de Representación del Cliente, al que se puede recurrir en caso de no haber quedado completamente satisfechos sus requerimientos.</p>
+            <p class="adn-card__text" data-i18n="adn.v5.text">Contamos con un Departamento de Representación del Cliente, al que se puede recurrir en caso de no haber quedado completamente satisfechos sus requerimientos.</p>
           </article>
 
         </div>
@@ -206,113 +215,32 @@
     <section class="section" id="areas" aria-labelledby="areas-title">
       <div class="container">
         <div class="section__header reveal">
-          <p class="section__eyebrow">03</p>
-          <h2 class="section__title" id="areas-title">Áreas de Práctica</h2>
-          <p class="section__subtitle">Cobertura jurídica integral para cada necesidad de su empresa.</p>
+          <p class="section__eyebrow" data-i18n="areas.eyebrow">03</p>
+          <h2 class="section__title" id="areas-title" data-i18n="areas.title">Áreas de Práctica</h2>
+          <p class="section__subtitle" data-i18n="areas.subtitle">Cobertura jurídica integral para cada necesidad de su empresa.</p>
         </div>
 
         <div class="areas-grid reveal">
-
-          <a href="#contacto" class="area-item" aria-label="Arbitraje - contactar">
-            <span class="area-item__icon" aria-hidden="true">⚖️</span>
-            <span class="area-item__name">Arbitraje</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Administrativo - contactar">
-            <span class="area-item__icon" aria-hidden="true">🏛️</span>
-            <span class="area-item__name">Administrativo</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Comercio Exterior - contactar">
-            <span class="area-item__icon" aria-hidden="true">🚢</span>
-            <span class="area-item__name">Comercio Exterior</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Constitucional - contactar">
-            <span class="area-item__icon" aria-hidden="true">📜</span>
-            <span class="area-item__name">Constitucional</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Contratación Pública - contactar">
-            <span class="area-item__icon" aria-hidden="true">📋</span>
-            <span class="area-item__name">Contratación Pública</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Corporativo - contactar">
-            <span class="area-item__icon" aria-hidden="true">🏢</span>
-            <span class="area-item__name">Corporativo</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Energía - contactar">
-            <span class="area-item__icon" aria-hidden="true">⚡</span>
-            <span class="area-item__name">Energía</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Fiscal - contactar">
-            <span class="area-item__icon" aria-hidden="true">💰</span>
-            <span class="area-item__name">Fiscal</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Internacional - contactar">
-            <span class="area-item__icon" aria-hidden="true">🌐</span>
-            <span class="area-item__name">Internacional</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Laboral - contactar">
-            <span class="area-item__icon" aria-hidden="true">👥</span>
-            <span class="area-item__name">Laboral</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Litigio Civil y Mercantil - contactar">
-            <span class="area-item__icon" aria-hidden="true">⚖️</span>
-            <span class="area-item__name">Litigio Civil y Mercantil</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Mediación - contactar">
-            <span class="area-item__icon" aria-hidden="true">🤝</span>
-            <span class="area-item__name">Mediación</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Migratorio - contactar">
-            <span class="area-item__icon" aria-hidden="true">✈️</span>
-            <span class="area-item__name">Migratorio</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Salud - contactar">
-            <span class="area-item__icon" aria-hidden="true">🏥</span>
-            <span class="area-item__name">Salud</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Telecomunicaciones - contactar">
-            <span class="area-item__icon" aria-hidden="true">📡</span>
-            <span class="area-item__name">Telecomunicaciones</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
-          <a href="#contacto" class="area-item" aria-label="Propiedad Industrial - contactar">
-            <span class="area-item__icon" aria-hidden="true">💡</span>
-            <span class="area-item__name">Propiedad Industrial</span>
-            <span class="area-item__arrow" aria-hidden="true">→</span>
-          </a>
-
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">⚖️</span><span class="area-item__name" data-i18n="area.1">Arbitraje</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">🏛️</span><span class="area-item__name" data-i18n="area.2">Administrativo</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">🚢</span><span class="area-item__name" data-i18n="area.3">Comercio Exterior</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">📜</span><span class="area-item__name" data-i18n="area.4">Constitucional</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">📋</span><span class="area-item__name" data-i18n="area.5">Contratación Pública</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">🏢</span><span class="area-item__name" data-i18n="area.6">Corporativo</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">⚡</span><span class="area-item__name" data-i18n="area.7">Energía</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">💰</span><span class="area-item__name" data-i18n="area.8">Fiscal</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">🌐</span><span class="area-item__name" data-i18n="area.9">Internacional</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">👥</span><span class="area-item__name" data-i18n="area.10">Laboral</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">⚖️</span><span class="area-item__name" data-i18n="area.11">Litigio Civil y Mercantil</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">🤝</span><span class="area-item__name" data-i18n="area.12">Mediación</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">✈️</span><span class="area-item__name" data-i18n="area.13">Migratorio</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">🏥</span><span class="area-item__name" data-i18n="area.14">Salud</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">📡</span><span class="area-item__name" data-i18n="area.15">Telecomunicaciones</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
+          <a href="#contacto" class="area-item"><span class="area-item__icon" aria-hidden="true">💡</span><span class="area-item__name" data-i18n="area.16">Propiedad Industrial</span><span class="area-item__arrow" aria-hidden="true">→</span></a>
         </div>
 
         <div class="areas-cta reveal">
-          <p>¿No encuentra su área? <a href="#contacto" class="areas-cta__link">Contáctenos y evaluamos su caso</a></p>
+          <p data-i18n="areas.cta">¿No encuentra su área? <a href="#contacto" class="areas-cta__link">Contáctenos y evaluamos su caso</a></p>
         </div>
       </div>
     </section>
@@ -321,64 +249,57 @@
     <section class="section integrantes-section" id="integrantes" aria-labelledby="integrantes-title">
       <div class="container">
         <div class="section__header reveal">
-          <p class="section__eyebrow">04</p>
-          <h2 class="section__title" id="integrantes-title">Integrantes</h2>
-          <p class="section__subtitle">Los socios fundadores de CAPÍN CONSULTORES, S.C. cuentan con suficiente experiencia en el mercado — una institución joven con amplia experiencia que tiene como finalidad comprender las necesidades específicas de cada uno de sus clientes para así obtener los mejores resultados.</p>
+          <p class="section__eyebrow" data-i18n="team.eyebrow">04</p>
+          <h2 class="section__title" id="integrantes-title" data-i18n="team.title">Integrantes</h2>
+          <p class="section__subtitle" data-i18n="team.subtitle">Los socios fundadores de CAPÍN CONSULTORES, S.C. cuentan con suficiente experiencia en el mercado — una institución joven con amplia experiencia que tiene como finalidad comprender las necesidades específicas de cada uno de sus clientes para así obtener los mejores resultados.</p>
         </div>
 
         <div class="socios-grid">
-
           <article class="socio-card reveal reveal-delay-1">
             <div class="socio-card__avatar" aria-hidden="true">LCL</div>
             <div class="socio-card__info">
               <h3 class="socio-card__name">Luis Capín López</h3>
-              <p class="socio-card__role">Socio Fundador</p>
+              <p class="socio-card__role" data-i18n="team.founder">Socio Fundador</p>
             </div>
           </article>
-
           <article class="socio-card reveal reveal-delay-2">
             <div class="socio-card__avatar" aria-hidden="true">NCP</div>
             <div class="socio-card__info">
               <h3 class="socio-card__name">Norma Elsa Camarillo Padrón</h3>
-              <p class="socio-card__role">Socia</p>
+              <p class="socio-card__role" data-i18n="team.partner">Socia</p>
             </div>
           </article>
-
           <article class="socio-card reveal reveal-delay-3">
             <div class="socio-card__avatar" aria-hidden="true">EMM</div>
             <div class="socio-card__info">
               <h3 class="socio-card__name">Erick Mena Moreno</h3>
-              <p class="socio-card__role">Socio</p>
+              <p class="socio-card__role" data-i18n="team.partner">Socio</p>
             </div>
           </article>
-
           <article class="socio-card reveal reveal-delay-4">
             <div class="socio-card__avatar" aria-hidden="true">JHV</div>
             <div class="socio-card__info">
               <h3 class="socio-card__name">José de Jesús Hernández Vázquez</h3>
-              <p class="socio-card__role">Socio</p>
+              <p class="socio-card__role" data-i18n="team.partner">Socio</p>
             </div>
           </article>
-
           <article class="socio-card reveal reveal-delay-5">
             <div class="socio-card__avatar" aria-hidden="true">JHG</div>
             <div class="socio-card__info">
               <h3 class="socio-card__name">José de Jesús Hernández Garduño</h3>
-              <p class="socio-card__role">Socio</p>
+              <p class="socio-card__role" data-i18n="team.partner">Socio</p>
             </div>
           </article>
-
           <article class="socio-card reveal reveal-delay-1">
             <div class="socio-card__avatar" aria-hidden="true">JRG</div>
             <div class="socio-card__info">
               <h3 class="socio-card__name">Jesús Enrique Ríos García</h3>
-              <p class="socio-card__role">Socio</p>
+              <p class="socio-card__role" data-i18n="team.partner">Socio</p>
             </div>
           </article>
-
         </div>
 
-        <p class="integrantes-note reveal">Las áreas en las que la Firma desempeña sus actividades se encuentran dirigidas por profesionistas con los más altos estándares de conocimiento y probidad, los cuales han participado en distintos foros, tanto nacionales como internacionales, así como en la impartición de importantes cátedras en distintas universidades.</p>
+        <p class="integrantes-note reveal" data-i18n="team.note">Las áreas en las que la Firma desempeña sus actividades se encuentran dirigidas por profesionistas con los más altos estándares de conocimiento y probidad, los cuales han participado en distintos foros, tanto nacionales como internacionales, así como en la impartición de importantes cátedras en distintas universidades.</p>
       </div>
     </section>
 
@@ -386,48 +307,43 @@
     <section class="section alianzas-section" id="alianzas" aria-labelledby="alianzas-title">
       <div class="container">
         <div class="section__header reveal">
-          <p class="section__eyebrow">05</p>
-          <h2 class="section__title" id="alianzas-title">Alianzas Estratégicas</h2>
-          <p class="section__subtitle">Colaboramos con firmas de primer nivel en México y el mundo para ofrecer cobertura jurídica sin fronteras.</p>
+          <p class="section__eyebrow" data-i18n="alliances.eyebrow">05</p>
+          <h2 class="section__title" id="alianzas-title" data-i18n="alliances.title">Alianzas Estratégicas</h2>
+          <p class="section__subtitle" data-i18n="alliances.subtitle">Colaboramos con firmas de primer nivel en México y el mundo para ofrecer cobertura jurídica sin fronteras.</p>
         </div>
 
         <div class="alianzas-grid">
-
-          <a href="https://www.ilflaw.com" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-1" aria-label="ILF - International Law Firms, sitio externo">
+          <a href="https://www.ilflaw.com" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-1">
             <div class="alianza-card__logo" aria-hidden="true">ILF</div>
             <div class="alianza-card__body">
               <h3 class="alianza-card__name">ILF — International Law Firms (a.s.b.l.)</h3>
-              <p class="alianza-card__specialty">Red internacional de despachos independientes</p>
-              <span class="alianza-card__link">ilflaw.com <span aria-hidden="true">↗</span></span>
+              <p class="alianza-card__specialty" data-i18n="alliances.ilf">Red internacional de despachos independientes</p>
+              <span class="alianza-card__link">ilflaw.com ↗</span>
             </div>
           </a>
-
-          <a href="https://www.hernandezconsultores.com.mx" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-2" aria-label="Hernández Consultores Abogados, sitio externo">
+          <a href="https://www.hernandezconsultores.com.mx" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-2">
             <div class="alianza-card__logo" aria-hidden="true">HC</div>
             <div class="alianza-card__body">
               <h3 class="alianza-card__name">Hernández Consultores Abogados</h3>
-              <p class="alianza-card__specialty">Especialistas en Derecho Laboral</p>
-              <span class="alianza-card__link">hernandezconsultores.com.mx <span aria-hidden="true">↗</span></span>
+              <p class="alianza-card__specialty" data-i18n="alliances.hc">Especialistas en Derecho Laboral</p>
+              <span class="alianza-card__link">hernandezconsultores.com.mx ↗</span>
             </div>
           </a>
-
           <div class="alianza-card alianza-card--no-link reveal reveal-delay-3">
             <div class="alianza-card__logo" aria-hidden="true">DCA</div>
             <div class="alianza-card__body">
               <h3 class="alianza-card__name">Despacho Capín Abogados, S.C.</h3>
-              <p class="alianza-card__specialty">Litigio Civil y Mercantil · Telecomunicaciones</p>
+              <p class="alianza-card__specialty" data-i18n="alliances.dca">Litigio Civil y Mercantil · Telecomunicaciones</p>
             </div>
           </div>
-
-          <a href="https://www.crbusinessimmigration.com" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-4" aria-label="CR Business Immigration, sitio externo">
+          <a href="https://www.crbusinessimmigration.com" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-4">
             <div class="alianza-card__logo" aria-hidden="true">CR</div>
             <div class="alianza-card__body">
               <h3 class="alianza-card__name">CR Business Immigration, S.C.</h3>
-              <p class="alianza-card__specialty">Especialistas en Derecho Migratorio</p>
-              <span class="alianza-card__link">crbusinessimmigration.com <span aria-hidden="true">↗</span></span>
+              <p class="alianza-card__specialty" data-i18n="alliances.cr">Especialistas en Derecho Migratorio</p>
+              <span class="alianza-card__link">crbusinessimmigration.com ↗</span>
             </div>
           </a>
-
         </div>
       </div>
     </section>
@@ -436,17 +352,16 @@
     <section class="section contact-section" id="contacto" aria-labelledby="contacto-title">
       <div class="container contact-section__grid">
 
-        <!-- Info -->
         <div class="contact-info reveal">
-          <p class="section__eyebrow">06</p>
-          <h2 class="section__title contact-info__title" id="contacto-title">Contáctenos</h2>
-          <p class="contact-info__lead">Favor de proporcionar sus datos y nos comunicaremos con usted a la brevedad.</p>
+          <p class="section__eyebrow" data-i18n="contact.eyebrow">06</p>
+          <h2 class="section__title contact-info__title" id="contacto-title" data-i18n="contact.title">Contáctenos</h2>
+          <p class="contact-info__lead" data-i18n="contact.lead">Favor de proporcionar sus datos y nos comunicaremos con usted a la brevedad.</p>
 
           <ul class="contact-info__list">
             <li class="contact-info__item">
               <span class="contact-info__icon" aria-hidden="true">📍</span>
               <div>
-                <strong>Dirección</strong><br/>
+                <strong data-i18n="contact.addr.label">Dirección</strong><br/>
                 Bosque de Ciruelos #186 Piso 1<br/>
                 C.P. 11700, Ciudad de México
               </div>
@@ -454,33 +369,28 @@
             <li class="contact-info__item">
               <span class="contact-info__icon" aria-hidden="true">📞</span>
               <div>
-                <strong>Teléfono</strong><br/>
+                <strong data-i18n="contact.phone.label">Teléfono</strong><br/>
                 <a href="tel:+525552805616">+52 (55) 5280 5616</a>
               </div>
             </li>
             <li class="contact-info__item">
               <span class="contact-info__icon" aria-hidden="true">🌍</span>
               <div>
-                <strong>Presencia internacional</strong><br/>
-                México · París, Francia
+                <strong data-i18n="contact.intl.label">Presencia internacional</strong><br/>
+                <span data-i18n="contact.intl.value">México · París, Francia</span>
               </div>
             </li>
           </ul>
 
-          <!-- Acciones rápidas -->
           <div class="contact-info__actions">
             <a href="https://wa.me/525552805616?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Cap%C3%ADn%20Consultores."
-               class="btn btn--whatsapp"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Contactar por WhatsApp">
-              <!-- WhatsApp SVG -->
+               class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               WhatsApp
             </a>
-            <a href="tel:+525552805616" class="btn btn--call" aria-label="Llamar por teléfono">
+            <a href="tel:+525552805616" class="btn btn--call">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .97h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-              Llamar
+              <span data-i18n="contact.call">Llamar</span>
             </a>
           </div>
         </div>
@@ -491,72 +401,72 @@
 
             <div class="form-row">
               <div class="form-group">
-                <label for="f-name" class="form-label">Nombre *</label>
-                <input type="text" id="f-name" name="nombre" class="form-input" placeholder="Su nombre completo" required autocomplete="name" />
-                <span class="form-error" id="err-name">Ingrese su nombre.</span>
+                <label for="f-name" class="form-label" data-i18n="form.name">Nombre *</label>
+                <input type="text" id="f-name" name="nombre" class="form-input" data-i18n-placeholder="form.name.ph" placeholder="Su nombre completo" required autocomplete="name" />
+                <span class="form-error" id="err-name" data-i18n="form.err.name">Ingrese su nombre.</span>
               </div>
               <div class="form-group">
-                <label for="f-company" class="form-label">Compañía</label>
-                <input type="text" id="f-company" name="compania" class="form-input" placeholder="Nombre de su empresa" autocomplete="organization" />
+                <label for="f-company" class="form-label" data-i18n="form.company">Compañía</label>
+                <input type="text" id="f-company" name="compania" class="form-input" data-i18n-placeholder="form.company.ph" placeholder="Nombre de su empresa" autocomplete="organization" />
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label for="f-email" class="form-label">Email *</label>
+                <label for="f-email" class="form-label" data-i18n="form.email">Email *</label>
                 <input type="email" id="f-email" name="email" class="form-input" placeholder="correo@empresa.com" required autocomplete="email" />
-                <span class="form-error" id="err-email">Ingrese un email válido.</span>
+                <span class="form-error" id="err-email" data-i18n="form.err.email">Ingrese un email válido.</span>
               </div>
               <div class="form-group">
-                <label for="f-phone" class="form-label">Teléfono</label>
+                <label for="f-phone" class="form-label" data-i18n="form.phone">Teléfono</label>
                 <input type="tel" id="f-phone" name="telefono" class="form-input" placeholder="+52 55 0000 0000" autocomplete="tel" />
               </div>
             </div>
 
             <div class="form-group">
-              <label for="f-area" class="form-label">Área de interés</label>
+              <label for="f-area" class="form-label" data-i18n="form.area">Área de interés</label>
               <select id="f-area" name="area" class="form-input form-select">
-                <option value="">Seleccione un área…</option>
-                <option>Arbitraje</option>
-                <option>Administrativo</option>
-                <option>Comercio Exterior</option>
-                <option>Constitucional</option>
-                <option>Contratación Pública</option>
-                <option>Corporativo</option>
-                <option>Energía</option>
-                <option>Fiscal</option>
-                <option>Internacional</option>
-                <option>Laboral</option>
-                <option>Litigio Civil y Mercantil</option>
-                <option>Mediación</option>
-                <option>Migratorio</option>
-                <option>Salud</option>
-                <option>Telecomunicaciones</option>
-                <option>Propiedad Industrial</option>
-                <option>Otra</option>
+                <option value="" data-i18n="form.area.ph">Seleccione un área…</option>
+                <option data-i18n="area.1">Arbitraje</option>
+                <option data-i18n="area.2">Administrativo</option>
+                <option data-i18n="area.3">Comercio Exterior</option>
+                <option data-i18n="area.4">Constitucional</option>
+                <option data-i18n="area.5">Contratación Pública</option>
+                <option data-i18n="area.6">Corporativo</option>
+                <option data-i18n="area.7">Energía</option>
+                <option data-i18n="area.8">Fiscal</option>
+                <option data-i18n="area.9">Internacional</option>
+                <option data-i18n="area.10">Laboral</option>
+                <option data-i18n="area.11">Litigio Civil y Mercantil</option>
+                <option data-i18n="area.12">Mediación</option>
+                <option data-i18n="area.13">Migratorio</option>
+                <option data-i18n="area.14">Salud</option>
+                <option data-i18n="area.15">Telecomunicaciones</option>
+                <option data-i18n="area.16">Propiedad Industrial</option>
+                <option data-i18n="form.area.other">Otra</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="f-message" class="form-label">Mensaje *</label>
-              <textarea id="f-message" name="mensaje" class="form-input form-textarea" rows="4" placeholder="Describa brevemente su asunto o consulta…" required></textarea>
-              <span class="form-error" id="err-message">Ingrese su mensaje.</span>
+              <label for="f-message" class="form-label" data-i18n="form.message">Mensaje *</label>
+              <textarea id="f-message" name="mensaje" class="form-input form-textarea" rows="4" data-i18n-placeholder="form.message.ph" placeholder="Describa brevemente su asunto o consulta…" required></textarea>
+              <span class="form-error" id="err-message" data-i18n="form.err.message">Ingrese su mensaje.</span>
             </div>
 
             <div class="form-group form-group--check">
               <input type="checkbox" id="f-privacy" name="privacidad" class="form-checkbox" required />
               <label for="f-privacy" class="form-label--check">
-                He leído y acepto el <a href="#" class="form-link">Aviso de Privacidad</a>. *
+                <span data-i18n="form.privacy">He leído y acepto el</span> <a href="#" class="form-link" data-i18n="form.privacy.link">Aviso de Privacidad</a>. *
               </label>
-              <span class="form-error form-error--block" id="err-privacy">Acepte el aviso de privacidad.</span>
+              <span class="form-error form-error--block" id="err-privacy" data-i18n="form.err.privacy">Acepte el aviso de privacidad.</span>
             </div>
 
             <button type="submit" class="btn btn--submit">
-              <span class="btn__text">Enviar mensaje</span>
+              <span class="btn__text" data-i18n="form.submit">Enviar mensaje</span>
               <span class="btn__loader" aria-hidden="true"></span>
             </button>
 
-            <div class="form-success" id="formSuccess" hidden role="alert">
+            <div class="form-success" id="formSuccess" hidden role="alert" data-i18n="form.success">
               ✓ Gracias por contactarnos. Le responderemos a la brevedad.
             </div>
 
@@ -585,34 +495,34 @@
           C.P. 11700, Ciudad de México<br/>
           <a href="tel:+525552805616">+52 (55) 5280 5616</a>
         </p>
-        <p class="footer__intl">🌍 También en París, Francia</p>
+        <p class="footer__intl" data-i18n="footer.intl">🌍 También en París, Francia</p>
       </div>
 
       <nav class="footer__nav" aria-label="Navegación del footer">
-        <h4 class="footer__heading">La Firma</h4>
+        <h4 class="footer__heading" data-i18n="footer.firm">La Firma</h4>
         <ul class="footer__list">
-          <li><a href="#quienes-somos">Quiénes Somos</a></li>
-          <li><a href="#adn">Nuestro ADN</a></li>
-          <li><a href="#integrantes">Integrantes</a></li>
-          <li><a href="#alianzas">Alianzas</a></li>
+          <li><a href="#quienes-somos" data-i18n="nav.about">Quiénes Somos</a></li>
+          <li><a href="#adn" data-i18n="nav.adn">Nuestro ADN</a></li>
+          <li><a href="#integrantes" data-i18n="nav.team">Integrantes</a></li>
+          <li><a href="#alianzas" data-i18n="nav.alliances">Alianzas</a></li>
         </ul>
       </nav>
 
       <nav class="footer__nav" aria-label="Áreas de práctica">
-        <h4 class="footer__heading">Áreas de Práctica</h4>
+        <h4 class="footer__heading" data-i18n="nav.areas">Áreas de Práctica</h4>
         <ul class="footer__list">
-          <li><a href="#areas">Arbitraje</a></li>
-          <li><a href="#areas">Corporativo</a></li>
-          <li><a href="#areas">Fiscal</a></li>
-          <li><a href="#areas">Laboral</a></li>
-          <li><a href="#areas">Comercio Exterior</a></li>
-          <li><a href="#areas">Ver todas →</a></li>
+          <li><a href="#areas" data-i18n="area.1">Arbitraje</a></li>
+          <li><a href="#areas" data-i18n="area.6">Corporativo</a></li>
+          <li><a href="#areas" data-i18n="area.8">Fiscal</a></li>
+          <li><a href="#areas" data-i18n="area.10">Laboral</a></li>
+          <li><a href="#areas" data-i18n="area.3">Comercio Exterior</a></li>
+          <li><a href="#areas" data-i18n="footer.seeall">Ver todas →</a></li>
         </ul>
       </nav>
 
       <div class="footer__contact-col">
-        <h4 class="footer__heading">Contáctenos</h4>
-        <a href="#contacto" class="btn btn--primary btn--sm">Enviar consulta</a>
+        <h4 class="footer__heading" data-i18n="nav.contact">Contacto</h4>
+        <a href="#contacto" class="btn btn--primary btn--sm" data-i18n="footer.consult">Enviar consulta</a>
         <a href="https://wa.me/525552805616" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--sm" style="margin-top:10px">WhatsApp</a>
       </div>
 
@@ -621,20 +531,17 @@
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
         <p class="footer__legal-copy">
-          <a href="#">Aviso de Privacidad</a>
+          <a href="#" data-i18n="footer.privacy">Aviso de Privacidad</a>
           &nbsp;|&nbsp;
-          &copy; <span id="footerYear"></span> CAPÍN CONSULTORES, S.C. Todos los derechos reservados.
+          &copy; <span id="footerYear"></span> CAPÍN CONSULTORES, S.C. <span data-i18n="footer.rights">Todos los derechos reservados.</span>
         </p>
       </div>
     </div>
   </footer>
 
   <!-- FAB WhatsApp -->
-  <a href="https://wa.me/525552805616?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."
-     class="whatsapp-fab"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/525552805616?text=Hello%2C%20I%20would%20like%20more%20information%20about%20Cap%C3%ADn%20Consultores."
+     class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
