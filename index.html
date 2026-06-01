@@ -4,52 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO básico -->
-  <title>Garza & Asociados | Despacho de Abogados Corporativos en México</title>
-  <meta name="description" content="Despacho de abogados corporativos en México especializado en derecho corporativo, fusiones y adquisiciones, contratos, cumplimiento normativo y litigio mercantil." />
-  <meta name="keywords" content="abogados corporativos México, derecho corporativo, fusiones y adquisiciones, contratos, litigio mercantil, cumplimiento normativo" />
-  <meta name="author" content="Garza & Asociados" />
+  <!-- SEO -->
+  <title>CAPÍN CONSULTORES, S.C. | Firma de Abogados en México</title>
+  <meta name="description" content="CAPÍN CONSULTORES, S.C. es una Firma de Abogados con presencia en México y París, especializada en derecho corporativo, fiscal, laboral, comercio exterior y más de 16 áreas de práctica." />
+  <meta name="keywords" content="abogados México, firma legal CDMX, derecho corporativo, arbitraje, fiscal, laboral, comercio exterior, CAPÍN CONSULTORES" />
+  <meta name="author" content="CAPÍN CONSULTORES, S.C." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Garza & Asociados | Abogados Corporativos" />
-  <meta property="og:description" content="Asesoría legal corporativa de alto nivel para empresas en México y con presencia internacional." />
+  <meta property="og:title" content="CAPÍN CONSULTORES, S.C. | Firma de Abogados" />
+  <meta property="og:description" content="Firma de Abogados con presencia en México y París. Más de 16 áreas de práctica con los más altos estándares de calidad y oportunidad." />
   <meta property="og:type" content="website" />
 
-  <!-- Fuentes elegantes de Google Fonts -->
+  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ==============================
-       HEADER / NAVEGACIÓN
-  ================================ -->
+  <!-- ========== HEADER ========== -->
   <header class="header" id="header">
     <div class="container header__inner">
 
-      <a href="#inicio" class="logo">
-        <span class="logo__icon">⚖</span>
+      <a href="#inicio" class="logo" aria-label="CAPÍN CONSULTORES inicio">
+        <div class="logo__mark" aria-hidden="true">CC</div>
         <div class="logo__text">
-          <span class="logo__name">Garza &amp; Asociados</span>
-          <span class="logo__tagline">Abogados Corporativos</span>
+          <span class="logo__name">CAPÍN CONSULTORES</span>
+          <span class="logo__sub">S.C.</span>
         </div>
       </a>
 
       <nav class="nav" id="nav" aria-label="Navegación principal">
         <ul class="nav__list">
-          <li><a href="#servicios" class="nav__link">Servicios</a></li>
-          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
-          <li><a href="#industrias" class="nav__link">Industrias</a></li>
-          <li><a href="#proceso" class="nav__link">Proceso</a></li>
-          <li><a href="#testimonios" class="nav__link">Clientes</a></li>
+          <li><a href="#quienes-somos" class="nav__link">Quiénes Somos</a></li>
+          <li><a href="#adn" class="nav__link">Nuestro ADN</a></li>
+          <li><a href="#areas" class="nav__link">Áreas de Práctica</a></li>
+          <li><a href="#integrantes" class="nav__link">Integrantes</a></li>
+          <li><a href="#alianzas" class="nav__link">Alianzas</a></li>
           <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
         </ul>
       </nav>
 
-      <!-- Botón hamburguesa para móvil -->
       <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -59,530 +56,505 @@
 
   <main>
 
-    <!-- ==============================
-         HERO
-    ================================ -->
-    <section class="hero" id="inicio">
-      <div class="hero__overlay"></div>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio" aria-label="Bienvenida">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-grid"></div>
+        <div class="hero__bg-gradient"></div>
+      </div>
+
       <div class="container hero__content">
-        <p class="hero__eyebrow">Despacho de Abogados Corporativos</p>
-        <h1 class="hero__title">Asesoría legal que impulsa <em>decisiones de negocio</em></h1>
-        <p class="hero__subtitle">Más de 20 años protegiendo los intereses de empresas nacionales e internacionales en México con rigor, confidencialidad y resultados.</p>
+        <div class="hero__badge">Firma de Abogados · México &amp; París</div>
+        <h1 class="hero__title">
+          <span class="hero__title-top">CAPÍN</span>
+          <span class="hero__title-main">CONSULTORES</span>
+          <span class="hero__title-sc">S.C.</span>
+        </h1>
+        <p class="hero__tagline">Los más altos estándares de calidad en el marco jurídico de México y el extranjero</p>
         <div class="hero__actions">
-          <a href="#contacto" class="btn btn--primary">Agendar consulta</a>
-          <a href="#servicios" class="btn btn--outline">Conocer servicios</a>
+          <a href="#areas" class="btn btn--primary">Áreas de práctica</a>
+          <a href="#contacto" class="btn btn--ghost">Contactar ahora</a>
         </div>
-        <div class="hero__stats">
-          <div class="stat">
-            <span class="stat__number">+500</span>
-            <span class="stat__label">Clientes atendidos</span>
+
+        <div class="hero__pillars" aria-label="Pilares del despacho">
+          <div class="hero__pillar">
+            <span class="hero__pillar-icon" aria-hidden="true">⚖</span>
+            <span>Profesionalismo</span>
           </div>
-          <div class="stat">
-            <span class="stat__number">20+</span>
-            <span class="stat__label">Años de experiencia</span>
+          <div class="hero__pillar-div" aria-hidden="true"></div>
+          <div class="hero__pillar">
+            <span class="hero__pillar-icon" aria-hidden="true">🌐</span>
+            <span>Cobertura Internacional</span>
           </div>
-          <div class="stat">
-            <span class="stat__number">98%</span>
-            <span class="stat__label">Satisfacción cliente</span>
+          <div class="hero__pillar-div" aria-hidden="true"></div>
+          <div class="hero__pillar">
+            <span class="hero__pillar-icon" aria-hidden="true">🛡</span>
+            <span>Servicio Integral</span>
           </div>
         </div>
       </div>
+
+      <a href="#quienes-somos" class="hero__scroll" aria-label="Ir a quiénes somos">
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+        <span class="hero__scroll-text">Conocer más</span>
+      </a>
     </section>
 
-    <!-- ==============================
-         SERVICIOS LEGALES
-    ================================ -->
-    <section class="section services" id="servicios">
+    <!-- ========== QUIÉNES SOMOS ========== -->
+    <section class="section" id="quienes-somos" aria-labelledby="qs-title">
       <div class="container">
-        <div class="section__header">
-          <p class="section__eyebrow">Áreas de práctica</p>
-          <h2 class="section__title">Servicios legales especializados</h2>
-          <p class="section__subtitle">Ofrecemos soluciones jurídicas integrales diseñadas para la complejidad del entorno empresarial mexicano e internacional.</p>
-        </div>
 
-        <div class="services__grid">
-
-          <article class="service-card">
-            <div class="service-card__icon">🏢</div>
-            <h3 class="service-card__title">Derecho Corporativo</h3>
-            <p class="service-card__text">Constitución, reestructura y gobierno corporativo de sociedades. Elaboración de estatutos, acuerdos de accionistas y asambleas.</p>
-            <a href="#contacto" class="service-card__link">Consultar →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card__icon">🤝</div>
-            <h3 class="service-card__title">Fusiones y Adquisiciones</h3>
-            <p class="service-card__text">Due diligence, estructuración, negociación y cierre de operaciones de M&amp;A. Asesoría en compraventa de empresas y activos.</p>
-            <a href="#contacto" class="service-card__link">Consultar →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card__icon">📄</div>
-            <h3 class="service-card__title">Contratos Comerciales</h3>
-            <p class="service-card__text">Redacción, revisión y negociación de contratos complejos: distribución, licencias, joint ventures, financiamiento y más.</p>
-            <a href="#contacto" class="service-card__link">Consultar →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card__icon">✅</div>
-            <h3 class="service-card__title">Cumplimiento Normativo</h3>
-            <p class="service-card__text">Programas de compliance, prevención de lavado de dinero, protección de datos (LFPDPPP) y regulación sectorial.</p>
-            <a href="#contacto" class="service-card__link">Consultar →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card__icon">⚖️</div>
-            <h3 class="service-card__title">Litigio Mercantil</h3>
-            <p class="service-card__text">Representación en controversias comerciales, arbitraje nacional e internacional, y procedimientos ante autoridades regulatorias.</p>
-            <a href="#contacto" class="service-card__link">Consultar →</a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card__icon">💼</div>
-            <h3 class="service-card__title">Asesoría Empresarial</h3>
-            <p class="service-card__text">Consultoría estratégica permanente para dirección general y consejos de administración. Identificación y gestión de riesgos legales.</p>
-            <a href="#contacto" class="service-card__link">Consultar →</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==============================
-         SOBRE EL DESPACHO
-    ================================ -->
-    <section class="section about" id="nosotros">
-      <div class="container about__grid">
-
-        <div class="about__visual">
-          <div class="about__img-wrapper">
-            <!-- Placeholder visual elegante -->
-            <div class="about__img-placeholder" aria-hidden="true">
-              <span class="about__img-icon">⚖</span>
-            </div>
-            <div class="about__badge">
-              <span class="about__badge-number">20+</span>
-              <span class="about__badge-text">Años de<br/>excelencia</span>
-            </div>
+        <div class="qs-intro reveal">
+          <div class="qs-intro__label" aria-hidden="true">01</div>
+          <div class="qs-intro__body">
+            <p class="section__eyebrow">Quiénes Somos</p>
+            <h2 class="section__title" id="qs-title">Una firma con experiencia, visión y alcance global</h2>
+            <p class="qs-intro__lead">CAPÍN CONSULTORES S.C. es una Firma de Abogados con gran experiencia profesional que le permite brindar a sus clientes los más altos estándares de calidad y oportunidad en sus servicios, permitiendo con ello el desarrollo dentro del marco jurídico en México y en el extranjero, ayudándolos a posicionarse como empresas de clase mundial en los diferentes mercados en que se desarrollan.</p>
+            <p class="qs-intro__sub">Nuestra filosofía está inspirada en valores éticos y de servicio, garantizando la confianza depositada por nuestros clientes.</p>
           </div>
         </div>
 
-        <div class="about__content">
-          <p class="section__eyebrow">Sobre el despacho</p>
-          <h2 class="section__title about__title">Comprometidos con la excelencia jurídica</h2>
-          <p class="about__text">Garza &amp; Asociados es un despacho de abogados corporativos fundado en la Ciudad de México con presencia en Guadalajara y Monterrey. Durante más de dos décadas hemos acompañado a empresas nacionales, multinacionales y fondos de inversión en sus operaciones más relevantes.</p>
-          <p class="about__text">Nuestro equipo está integrado por abogados con formación en las mejores universidades de México y el extranjero, con experiencia tanto en el sector privado como en la administración pública.</p>
+        <div class="qs-pillars">
 
-          <ul class="about__values">
-            <li><span class="about__value-icon">★</span> Rigor técnico y ética profesional</li>
-            <li><span class="about__value-icon">★</span> Confidencialidad absoluta</li>
-            <li><span class="about__value-icon">★</span> Orientación a resultados</li>
-            <li><span class="about__value-icon">★</span> Presencia nacional con visión global</li>
-          </ul>
+          <article class="qs-card reveal reveal-delay-1">
+            <div class="qs-card__number" aria-hidden="true">I</div>
+            <div class="qs-card__icon" aria-hidden="true">🏛</div>
+            <h3 class="qs-card__title">Profesionalismo</h3>
+            <p class="qs-card__text">Las áreas en las que la Firma desempeña sus actividades se encuentran dirigidas por profesionistas con estándares de conocimiento y probidad de primer nivel, los cuales han participado en distintos foros, tanto nacionales como internacionales, así como en la impartición de importantes cátedras en prestigiadas universidades.</p>
+          </article>
 
-          <a href="#contacto" class="btn btn--primary">Conocer al equipo</a>
+          <article class="qs-card reveal reveal-delay-2">
+            <div class="qs-card__number" aria-hidden="true">II</div>
+            <div class="qs-card__icon" aria-hidden="true">🔄</div>
+            <h3 class="qs-card__title">Servicio Integral</h3>
+            <p class="qs-card__text">Prestamos un servicio que comprende tanto los aspectos preventivos como los correctivos, frente a las necesidades particulares de nuestros clientes, asegurándoles estabilidad y anticipándonos a las posibles contingencias que pudieran surgir en la operación de sus negocios.</p>
+          </article>
+
+          <article class="qs-card reveal reveal-delay-3">
+            <div class="qs-card__number" aria-hidden="true">III</div>
+            <div class="qs-card__icon" aria-hidden="true">🌍</div>
+            <h3 class="qs-card__title">Cobertura</h3>
+            <p class="qs-card__text">CAPÍN CONSULTORES, S.C. desempeña un papel importante y de gran influencia, tanto en México como en el extranjero, contando con una <strong>oficina en París, Francia</strong>, y diversas alianzas estratégicas con firmas independientes en la República Mexicana y alrededor del mundo.</p>
+          </article>
+
         </div>
-
       </div>
     </section>
 
-    <!-- ==============================
-         POR QUÉ ELEGIRNOS
-    ================================ -->
-    <section class="section why-us">
+    <!-- ========== NUESTRO ADN ========== -->
+    <section class="section adn-section" id="adn" aria-labelledby="adn-title">
+      <div class="adn-section__bg" aria-hidden="true"></div>
       <div class="container">
-        <div class="section__header">
-          <p class="section__eyebrow">Nuestra diferencia</p>
-          <h2 class="section__title">Por qué elegirnos</h2>
+        <div class="section__header reveal">
+          <p class="section__eyebrow section__eyebrow--light">02</p>
+          <h2 class="section__title section__title--light" id="adn-title">Nuestro ADN</h2>
+          <p class="section__subtitle section__subtitle--light">Los principios que guían cada decisión y cada servicio que brindamos.</p>
         </div>
 
-        <div class="why-us__grid">
+        <div class="adn-grid">
 
-          <div class="why-card">
-            <div class="why-card__number">01</div>
-            <h3 class="why-card__title">Especialización profunda</h3>
-            <p class="why-card__text">Nos enfocamos exclusivamente en derecho corporativo y mercantil. No somos generalistas — somos especialistas.</p>
-          </div>
+          <article class="adn-card reveal reveal-delay-1">
+            <div class="adn-card__header">
+              <span class="adn-card__letter" aria-hidden="true">S</span>
+              <h3 class="adn-card__title">Sinergia</h3>
+            </div>
+            <p class="adn-card__text">Con una eficiente comunicación y profunda colaboración, aprovechamos la experiencia de cada uno de nuestros integrantes en su correspondiente área de especialización, en favor de los requerimientos específicos de nuestros clientes.</p>
+          </article>
 
-          <div class="why-card">
-            <div class="why-card__number">02</div>
-            <h3 class="why-card__title">Atención de socios senior</h3>
-            <p class="why-card__text">Cada asunto es atendido directamente por un socio con experiencia comprobada, no delegado a asociados junior.</p>
-          </div>
+          <article class="adn-card reveal reveal-delay-2">
+            <div class="adn-card__header">
+              <span class="adn-card__letter" aria-hidden="true">V</span>
+              <h3 class="adn-card__title">Vanguardia</h3>
+            </div>
+            <p class="adn-card__text">Estamos permanentemente actualizados, tanto en las reformas de ley y criterios judiciales, como en las innovaciones tecnológicas y de servicio, para ofrecer la mejor estrategia posible, brindando con ello la atención más completa y adecuada.</p>
+          </article>
 
-          <div class="why-card">
-            <div class="why-card__number">03</div>
-            <h3 class="why-card__title">Respuesta oportuna</h3>
-            <p class="why-card__text">Entendemos que los negocios no esperan. Garantizamos tiempos de respuesta claros y cumplimiento de plazos.</p>
-          </div>
+          <article class="adn-card reveal reveal-delay-3">
+            <div class="adn-card__header">
+              <span class="adn-card__letter" aria-hidden="true">R</span>
+              <h3 class="adn-card__title">Respuesta</h3>
+            </div>
+            <p class="adn-card__text">En todo momento, en horarios de oficina o fuera de ellos, estamos disponibles para atender los requerimientos de nuestros clientes y proponer una solución a sus problemas.</p>
+          </article>
 
-          <div class="why-card">
-            <div class="why-card__number">04</div>
-            <h3 class="why-card__title">Red internacional</h3>
-            <p class="why-card__text">Alianzas con despachos en Estados Unidos, España y América Latina para operaciones transfronterizas.</p>
-          </div>
+          <article class="adn-card reveal reveal-delay-4">
+            <div class="adn-card__header">
+              <span class="adn-card__letter" aria-hidden="true">P</span>
+              <h3 class="adn-card__title">Prontitud</h3>
+            </div>
+            <p class="adn-card__text">Llevamos cada asunto con la mayor agilidad posible, aprovechando al máximo todos los recursos a nuestro alcance para ofrecer un desempeño eficiente.</p>
+          </article>
 
-          <div class="why-card">
-            <div class="why-card__number">05</div>
-            <h3 class="why-card__title">Transparencia en honorarios</h3>
-            <p class="why-card__text">Presupuestos claros desde el inicio. Sin sorpresas ni cobros ocultos. Distintas estructuras de honorarios según el asunto.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-card__number">06</div>
-            <h3 class="why-card__title">Tecnología legal</h3>
-            <p class="why-card__text">Uso de herramientas de legaltech para due diligence, gestión documental y monitoreo normativo eficientes.</p>
-          </div>
+          <article class="adn-card adn-card--featured reveal reveal-delay-5">
+            <div class="adn-card__header">
+              <span class="adn-card__letter" aria-hidden="true">G</span>
+              <h3 class="adn-card__title">Garantía</h3>
+            </div>
+            <p class="adn-card__text">Contamos con un Departamento de Representación del Cliente, al que se puede recurrir en caso de no haber quedado completamente satisfechos sus requerimientos.</p>
+          </article>
 
         </div>
       </div>
     </section>
 
-    <!-- ==============================
-         INDUSTRIAS
-    ================================ -->
-    <section class="section industries" id="industrias">
+    <!-- ========== ÁREAS DE PRÁCTICA ========== -->
+    <section class="section" id="areas" aria-labelledby="areas-title">
       <div class="container">
-        <div class="section__header">
-          <p class="section__eyebrow">Sectores</p>
-          <h2 class="section__title">Industrias que atendemos</h2>
-          <p class="section__subtitle">Experiencia transversal en los sectores de mayor dinamismo en la economía mexicana.</p>
+        <div class="section__header reveal">
+          <p class="section__eyebrow">03</p>
+          <h2 class="section__title" id="areas-title">Áreas de Práctica</h2>
+          <p class="section__subtitle">Cobertura jurídica integral para cada necesidad de su empresa.</p>
         </div>
 
-        <div class="industries__grid">
-          <div class="industry-pill">🏗️ Construcción e Infraestructura</div>
-          <div class="industry-pill">💰 Servicios Financieros</div>
-          <div class="industry-pill">⚡ Energía y Recursos Naturales</div>
-          <div class="industry-pill">🏥 Salud y Farmacéutica</div>
-          <div class="industry-pill">🛒 Retail y Consumo</div>
-          <div class="industry-pill">🖥️ Tecnología y Startups</div>
-          <div class="industry-pill">🏭 Manufactura e Industria</div>
-          <div class="industry-pill">🌿 Agroindustria</div>
-          <div class="industry-pill">🚀 Capital Privado y Venture</div>
-          <div class="industry-pill">🏨 Turismo e Inmobiliario</div>
-          <div class="industry-pill">📡 Telecomunicaciones</div>
-          <div class="industry-pill">🚢 Comercio Exterior</div>
+        <div class="areas-grid reveal">
+
+          <a href="#contacto" class="area-item" aria-label="Arbitraje - contactar">
+            <span class="area-item__icon" aria-hidden="true">⚖️</span>
+            <span class="area-item__name">Arbitraje</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Administrativo - contactar">
+            <span class="area-item__icon" aria-hidden="true">🏛️</span>
+            <span class="area-item__name">Administrativo</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Comercio Exterior - contactar">
+            <span class="area-item__icon" aria-hidden="true">🚢</span>
+            <span class="area-item__name">Comercio Exterior</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Constitucional - contactar">
+            <span class="area-item__icon" aria-hidden="true">📜</span>
+            <span class="area-item__name">Constitucional</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Contratación Pública - contactar">
+            <span class="area-item__icon" aria-hidden="true">📋</span>
+            <span class="area-item__name">Contratación Pública</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Corporativo - contactar">
+            <span class="area-item__icon" aria-hidden="true">🏢</span>
+            <span class="area-item__name">Corporativo</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Energía - contactar">
+            <span class="area-item__icon" aria-hidden="true">⚡</span>
+            <span class="area-item__name">Energía</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Fiscal - contactar">
+            <span class="area-item__icon" aria-hidden="true">💰</span>
+            <span class="area-item__name">Fiscal</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Internacional - contactar">
+            <span class="area-item__icon" aria-hidden="true">🌐</span>
+            <span class="area-item__name">Internacional</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Laboral - contactar">
+            <span class="area-item__icon" aria-hidden="true">👥</span>
+            <span class="area-item__name">Laboral</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Litigio Civil y Mercantil - contactar">
+            <span class="area-item__icon" aria-hidden="true">⚖️</span>
+            <span class="area-item__name">Litigio Civil y Mercantil</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Mediación - contactar">
+            <span class="area-item__icon" aria-hidden="true">🤝</span>
+            <span class="area-item__name">Mediación</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Migratorio - contactar">
+            <span class="area-item__icon" aria-hidden="true">✈️</span>
+            <span class="area-item__name">Migratorio</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Salud - contactar">
+            <span class="area-item__icon" aria-hidden="true">🏥</span>
+            <span class="area-item__name">Salud</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Telecomunicaciones - contactar">
+            <span class="area-item__icon" aria-hidden="true">📡</span>
+            <span class="area-item__name">Telecomunicaciones</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contacto" class="area-item" aria-label="Propiedad Industrial - contactar">
+            <span class="area-item__icon" aria-hidden="true">💡</span>
+            <span class="area-item__name">Propiedad Industrial</span>
+            <span class="area-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+        <div class="areas-cta reveal">
+          <p>¿No encuentra su área? <a href="#contacto" class="areas-cta__link">Contáctenos y evaluamos su caso</a></p>
         </div>
       </div>
     </section>
 
-    <!-- ==============================
-         PROCESO DE TRABAJO
-    ================================ -->
-    <section class="section process" id="proceso">
+    <!-- ========== INTEGRANTES ========== -->
+    <section class="section integrantes-section" id="integrantes" aria-labelledby="integrantes-title">
       <div class="container">
-        <div class="section__header">
-          <p class="section__eyebrow">Cómo trabajamos</p>
-          <h2 class="section__title">Nuestro proceso</h2>
-          <p class="section__subtitle">Un método estructurado que garantiza claridad, control y resultados en cada asunto.</p>
+        <div class="section__header reveal">
+          <p class="section__eyebrow">04</p>
+          <h2 class="section__title" id="integrantes-title">Integrantes</h2>
+          <p class="section__subtitle">Los socios fundadores de CAPÍN CONSULTORES, S.C. cuentan con suficiente experiencia en el mercado — una institución joven con amplia experiencia que tiene como finalidad comprender las necesidades específicas de cada uno de sus clientes para así obtener los mejores resultados.</p>
         </div>
 
-        <div class="process__steps">
+        <div class="socios-grid">
 
-          <div class="process-step">
-            <div class="process-step__number">1</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Consulta inicial</h3>
-              <p class="process-step__text">Reunión sin costo para entender el asunto, evaluar su viabilidad y proponer una estrategia preliminar.</p>
+          <article class="socio-card reveal reveal-delay-1">
+            <div class="socio-card__avatar" aria-hidden="true">LCL</div>
+            <div class="socio-card__info">
+              <h3 class="socio-card__name">Luis Capín López</h3>
+              <p class="socio-card__role">Socio Fundador</p>
+            </div>
+          </article>
+
+          <article class="socio-card reveal reveal-delay-2">
+            <div class="socio-card__avatar" aria-hidden="true">NCP</div>
+            <div class="socio-card__info">
+              <h3 class="socio-card__name">Norma Elsa Camarillo Padrón</h3>
+              <p class="socio-card__role">Socia</p>
+            </div>
+          </article>
+
+          <article class="socio-card reveal reveal-delay-3">
+            <div class="socio-card__avatar" aria-hidden="true">EMM</div>
+            <div class="socio-card__info">
+              <h3 class="socio-card__name">Erick Mena Moreno</h3>
+              <p class="socio-card__role">Socio</p>
+            </div>
+          </article>
+
+          <article class="socio-card reveal reveal-delay-4">
+            <div class="socio-card__avatar" aria-hidden="true">JHV</div>
+            <div class="socio-card__info">
+              <h3 class="socio-card__name">José de Jesús Hernández Vázquez</h3>
+              <p class="socio-card__role">Socio</p>
+            </div>
+          </article>
+
+          <article class="socio-card reveal reveal-delay-5">
+            <div class="socio-card__avatar" aria-hidden="true">JHG</div>
+            <div class="socio-card__info">
+              <h3 class="socio-card__name">José de Jesús Hernández Garduño</h3>
+              <p class="socio-card__role">Socio</p>
+            </div>
+          </article>
+
+          <article class="socio-card reveal reveal-delay-1">
+            <div class="socio-card__avatar" aria-hidden="true">JRG</div>
+            <div class="socio-card__info">
+              <h3 class="socio-card__name">Jesús Enrique Ríos García</h3>
+              <p class="socio-card__role">Socio</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="integrantes-note reveal">Las áreas en las que la Firma desempeña sus actividades se encuentran dirigidas por profesionistas con los más altos estándares de conocimiento y probidad, los cuales han participado en distintos foros, tanto nacionales como internacionales, así como en la impartición de importantes cátedras en distintas universidades.</p>
+      </div>
+    </section>
+
+    <!-- ========== ALIANZAS ========== -->
+    <section class="section alianzas-section" id="alianzas" aria-labelledby="alianzas-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">05</p>
+          <h2 class="section__title" id="alianzas-title">Alianzas Estratégicas</h2>
+          <p class="section__subtitle">Colaboramos con firmas de primer nivel en México y el mundo para ofrecer cobertura jurídica sin fronteras.</p>
+        </div>
+
+        <div class="alianzas-grid">
+
+          <a href="https://www.ilflaw.com" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-1" aria-label="ILF - International Law Firms, sitio externo">
+            <div class="alianza-card__logo" aria-hidden="true">ILF</div>
+            <div class="alianza-card__body">
+              <h3 class="alianza-card__name">ILF — International Law Firms (a.s.b.l.)</h3>
+              <p class="alianza-card__specialty">Red internacional de despachos independientes</p>
+              <span class="alianza-card__link">ilflaw.com <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+
+          <a href="https://www.hernandezconsultores.com.mx" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-2" aria-label="Hernández Consultores Abogados, sitio externo">
+            <div class="alianza-card__logo" aria-hidden="true">HC</div>
+            <div class="alianza-card__body">
+              <h3 class="alianza-card__name">Hernández Consultores Abogados</h3>
+              <p class="alianza-card__specialty">Especialistas en Derecho Laboral</p>
+              <span class="alianza-card__link">hernandezconsultores.com.mx <span aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+
+          <div class="alianza-card alianza-card--no-link reveal reveal-delay-3">
+            <div class="alianza-card__logo" aria-hidden="true">DCA</div>
+            <div class="alianza-card__body">
+              <h3 class="alianza-card__name">Despacho Capín Abogados, S.C.</h3>
+              <p class="alianza-card__specialty">Litigio Civil y Mercantil · Telecomunicaciones</p>
             </div>
           </div>
 
-          <div class="process-step__connector" aria-hidden="true"></div>
-
-          <div class="process-step">
-            <div class="process-step__number">2</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Diagnóstico legal</h3>
-              <p class="process-step__text">Análisis profundo del caso, revisión de documentación y mapeo de riesgos legales relevantes.</p>
+          <a href="https://www.crbusinessimmigration.com" target="_blank" rel="noopener noreferrer" class="alianza-card reveal reveal-delay-4" aria-label="CR Business Immigration, sitio externo">
+            <div class="alianza-card__logo" aria-hidden="true">CR</div>
+            <div class="alianza-card__body">
+              <h3 class="alianza-card__name">CR Business Immigration, S.C.</h3>
+              <p class="alianza-card__specialty">Especialistas en Derecho Migratorio</p>
+              <span class="alianza-card__link">crbusinessimmigration.com <span aria-hidden="true">↗</span></span>
             </div>
-          </div>
-
-          <div class="process-step__connector" aria-hidden="true"></div>
-
-          <div class="process-step">
-            <div class="process-step__number">3</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Propuesta y acuerdo</h3>
-              <p class="process-step__text">Presentación de estrategia, alcance, tiempos y honorarios. Firma de carta de compromiso.</p>
-            </div>
-          </div>
-
-          <div class="process-step__connector" aria-hidden="true"></div>
-
-          <div class="process-step">
-            <div class="process-step__number">4</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Ejecución</h3>
-              <p class="process-step__text">Implementación de la estrategia con reportes periódicos de avance y comunicación directa con el cliente.</p>
-            </div>
-          </div>
-
-          <div class="process-step__connector" aria-hidden="true"></div>
-
-          <div class="process-step">
-            <div class="process-step__number">5</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Cierre y seguimiento</h3>
-              <p class="process-step__text">Entrega de resultados, documentación final y acompañamiento post-asunto para asegurar continuidad.</p>
-            </div>
-          </div>
+          </a>
 
         </div>
       </div>
     </section>
 
-    <!-- ==============================
-         TESTIMONIOS
-    ================================ -->
-    <section class="section testimonials" id="testimonios">
-      <div class="container">
-        <div class="section__header">
-          <p class="section__eyebrow">Clientes</p>
-          <h2 class="section__title">Lo que dicen nuestros clientes</h2>
-        </div>
+    <!-- ========== CONTACTO ========== -->
+    <section class="section contact-section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contact-section__grid">
 
-        <div class="testimonials__grid">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <p class="section__eyebrow">06</p>
+          <h2 class="section__title contact-info__title" id="contacto-title">Contáctenos</h2>
+          <p class="contact-info__lead">Favor de proporcionar sus datos y nos comunicaremos con usted a la brevedad.</p>
 
-          <blockquote class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
-            <p class="testimonial-card__text">"Garza &amp; Asociados fue fundamental en la adquisición de nuestra empresa. Su due diligence fue impecable y nos protegieron en cada cláusula del contrato. Recomendados ampliamente."</p>
-            <footer class="testimonial-card__footer">
-              <div class="testimonial-card__avatar" aria-hidden="true">RC</div>
+          <ul class="contact-info__list">
+            <li class="contact-info__item">
+              <span class="contact-info__icon" aria-hidden="true">📍</span>
               <div>
-                <cite class="testimonial-card__name">Roberto C.</cite>
-                <span class="testimonial-card__role">Director General, Grupo Industrial del Bajío</span>
-              </div>
-            </footer>
-          </blockquote>
-
-          <blockquote class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
-            <p class="testimonial-card__text">"Su equipo de cumplimiento normativo nos ayudó a implementar un programa de compliance robusto en menos de tres meses. Profesionalismo y claridad en todo momento."</p>
-            <footer class="testimonial-card__footer">
-              <div class="testimonial-card__avatar" aria-hidden="true">LM</div>
-              <div>
-                <cite class="testimonial-card__name">Laura M.</cite>
-                <span class="testimonial-card__role">Chief Legal Officer, Fintech México</span>
-              </div>
-            </footer>
-          </blockquote>
-
-          <blockquote class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
-            <p class="testimonial-card__text">"Llevamos cinco años con ellos como nuestro despacho externo. Responden rápido, dominan el tema y siempre piensan en el negocio, no solo en el aspecto legal."</p>
-            <footer class="testimonial-card__footer">
-              <div class="testimonial-card__avatar" aria-hidden="true">AG</div>
-              <div>
-                <cite class="testimonial-card__name">Alejandro G.</cite>
-                <span class="testimonial-card__role">CEO, Constructora Norteña S.A. de C.V.</span>
-              </div>
-            </footer>
-          </blockquote>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==============================
-         FAQ
-    ================================ -->
-    <section class="section faq" id="faq">
-      <div class="container">
-        <div class="section__header">
-          <p class="section__eyebrow">FAQ</p>
-          <h2 class="section__title">Preguntas frecuentes</h2>
-        </div>
-
-        <div class="faq__list" id="faqList">
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              ¿Ofrecen consulta inicial gratuita?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq__answer">
-              <p>Sí. Ofrecemos una primera reunión sin costo de hasta 45 minutos para evaluar su asunto, orientarle sobre las opciones disponibles y presentarle cómo podemos ayudarle. No genera ningún compromiso.</p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              ¿Cuál es su estructura de honorarios?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq__answer">
-              <p>Dependiendo del asunto, trabajamos con honorarios por hora, cuota fija por proyecto o retainer mensual. Siempre presentamos un presupuesto claro antes de iniciar cualquier trabajo.</p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              ¿Atienden empresas extranjeras que operan en México?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq__answer">
-              <p>Sí. Contamos con experiencia amplia en asesorar empresas extranjeras que buscan establecerse, invertir o hacer negocios en México. Nuestro equipo habla inglés y tenemos experiencia en operaciones transfronterizas.</p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              ¿Pueden representarnos en arbitrajes internacionales?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq__answer">
-              <p>Sí. Tenemos práctica activa en arbitraje comercial internacional bajo reglas ICC, CANACO y UNCITRAL, así como en litigios ante tribunales federales mexicanos en materia mercantil.</p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              ¿Cuánto tarda un proceso de due diligence?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq__answer">
-              <p>Depende del tamaño y complejidad de la empresa objetivo. En promedio, un due diligence legal integral puede tomar entre 2 y 6 semanas. Le proporcionamos un cronograma detallado desde el inicio.</p>
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <button class="faq__question" aria-expanded="false">
-              ¿Tienen oficinas fuera de la Ciudad de México?
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq__answer">
-              <p>Contamos con oficinas en Ciudad de México, Guadalajara y Monterrey. También atendemos clientes de forma remota en cualquier entidad de la República Mexicana.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==============================
-         CONTACTO
-    ================================ -->
-    <section class="section contact" id="contacto">
-      <div class="container contact__grid">
-
-        <div class="contact__info">
-          <p class="section__eyebrow">Contáctenos</p>
-          <h2 class="section__title contact__title">Hablemos de su asunto</h2>
-          <p class="contact__text">Estamos disponibles para atender su consulta de manera confidencial. Cuéntenos su situación y le contactaremos en menos de 24 horas hábiles.</p>
-
-          <ul class="contact__details">
-            <li class="contact__detail">
-              <span class="contact__detail-icon" aria-hidden="true">📍</span>
-              <div>
-                <strong>Ciudad de México</strong><br/>
-                Av. Paseo de la Reforma 350, Piso 18<br/>Col. Juárez, Cuauhtémoc, CDMX
+                <strong>Dirección</strong><br/>
+                Bosque de Ciruelos #186 Piso 1<br/>
+                C.P. 11700, Ciudad de México
               </div>
             </li>
-            <li class="contact__detail">
-              <span class="contact__detail-icon" aria-hidden="true">📞</span>
+            <li class="contact-info__item">
+              <span class="contact-info__icon" aria-hidden="true">📞</span>
               <div>
                 <strong>Teléfono</strong><br/>
-                <a href="tel:+525512345678">+52 55 1234 5678</a>
+                <a href="tel:+525552805616">+52 (55) 5280 5616</a>
               </div>
             </li>
-            <li class="contact__detail">
-              <span class="contact__detail-icon" aria-hidden="true">✉️</span>
+            <li class="contact-info__item">
+              <span class="contact-info__icon" aria-hidden="true">🌍</span>
               <div>
-                <strong>Correo electrónico</strong><br/>
-                <a href="mailto:contacto@garzayasociados.mx">contacto@garzayasociados.mx</a>
-              </div>
-            </li>
-            <li class="contact__detail">
-              <span class="contact__detail-icon" aria-hidden="true">🕐</span>
-              <div>
-                <strong>Horario de atención</strong><br/>
-                Lunes a viernes, 9:00 – 19:00 hrs
+                <strong>Presencia internacional</strong><br/>
+                México · París, Francia
               </div>
             </li>
           </ul>
 
-          <!-- Botones de contacto rápido -->
-          <div class="contact__quick-btns">
-            <a href="https://wa.me/525512345678?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20con%20Garza%20%26%20Asociados."
+          <!-- Acciones rápidas -->
+          <div class="contact-info__actions">
+            <a href="https://wa.me/525552805616?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Cap%C3%ADn%20Consultores."
                class="btn btn--whatsapp"
                target="_blank"
                rel="noopener noreferrer"
                aria-label="Contactar por WhatsApp">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <!-- WhatsApp SVG -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               WhatsApp
             </a>
-            <a href="mailto:contacto@garzayasociados.mx"
-               class="btn btn--email"
-               aria-label="Enviar correo electrónico">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Enviar correo
+            <a href="tel:+525552805616" class="btn btn--call" aria-label="Llamar por teléfono">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .97h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              Llamar
             </a>
           </div>
         </div>
 
-        <!-- Formulario de contacto (visual, sin backend) -->
-        <div class="contact__form-wrapper">
+        <!-- Formulario -->
+        <div class="contact-form-wrapper reveal reveal-delay-2">
           <form class="contact-form" id="contactForm" novalidate>
-            <h3 class="contact-form__title">Envíenos un mensaje</h3>
 
-            <div class="form-group">
-              <label for="name" class="form-label">Nombre completo *</label>
-              <input type="text" id="name" name="name" class="form-input" placeholder="Lic. Juan Pérez" required />
-              <span class="form-error" id="nameError">Por favor ingrese su nombre.</span>
-            </div>
-
-            <div class="form-group">
-              <label for="company" class="form-label">Empresa</label>
-              <input type="text" id="company" name="company" class="form-input" placeholder="Nombre de su empresa" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name" class="form-label">Nombre *</label>
+                <input type="text" id="f-name" name="nombre" class="form-input" placeholder="Su nombre completo" required autocomplete="name" />
+                <span class="form-error" id="err-name">Ingrese su nombre.</span>
+              </div>
+              <div class="form-group">
+                <label for="f-company" class="form-label">Compañía</label>
+                <input type="text" id="f-company" name="compania" class="form-input" placeholder="Nombre de su empresa" autocomplete="organization" />
+              </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label for="email" class="form-label">Correo electrónico *</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="correo@empresa.com" required />
-                <span class="form-error" id="emailError">Ingrese un correo válido.</span>
+                <label for="f-email" class="form-label">Email *</label>
+                <input type="email" id="f-email" name="email" class="form-input" placeholder="correo@empresa.com" required autocomplete="email" />
+                <span class="form-error" id="err-email">Ingrese un email válido.</span>
               </div>
               <div class="form-group">
-                <label for="phone" class="form-label">Teléfono</label>
-                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+52 55 0000 0000" />
+                <label for="f-phone" class="form-label">Teléfono</label>
+                <input type="tel" id="f-phone" name="telefono" class="form-input" placeholder="+52 55 0000 0000" autocomplete="tel" />
               </div>
             </div>
 
             <div class="form-group">
-              <label for="service" class="form-label">Área de interés *</label>
-              <select id="service" name="service" class="form-input form-select" required>
-                <option value="">Seleccione un servicio…</option>
-                <option value="corporativo">Derecho Corporativo</option>
-                <option value="mna">Fusiones y Adquisiciones</option>
-                <option value="contratos">Contratos Comerciales</option>
-                <option value="compliance">Cumplimiento Normativo</option>
-                <option value="litigio">Litigio Mercantil</option>
-                <option value="asesoria">Asesoría Empresarial</option>
-                <option value="otro">Otro</option>
+              <label for="f-area" class="form-label">Área de interés</label>
+              <select id="f-area" name="area" class="form-input form-select">
+                <option value="">Seleccione un área…</option>
+                <option>Arbitraje</option>
+                <option>Administrativo</option>
+                <option>Comercio Exterior</option>
+                <option>Constitucional</option>
+                <option>Contratación Pública</option>
+                <option>Corporativo</option>
+                <option>Energía</option>
+                <option>Fiscal</option>
+                <option>Internacional</option>
+                <option>Laboral</option>
+                <option>Litigio Civil y Mercantil</option>
+                <option>Mediación</option>
+                <option>Migratorio</option>
+                <option>Salud</option>
+                <option>Telecomunicaciones</option>
+                <option>Propiedad Industrial</option>
+                <option>Otra</option>
               </select>
-              <span class="form-error" id="serviceError">Seleccione un área.</span>
             </div>
 
             <div class="form-group">
-              <label for="message" class="form-label">Descripción del asunto *</label>
-              <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Describa brevemente su situación legal…" required></textarea>
-              <span class="form-error" id="messageError">Por favor describa su asunto.</span>
+              <label for="f-message" class="form-label">Mensaje *</label>
+              <textarea id="f-message" name="mensaje" class="form-input form-textarea" rows="4" placeholder="Describa brevemente su asunto o consulta…" required></textarea>
+              <span class="form-error" id="err-message">Ingrese su mensaje.</span>
             </div>
 
-            <div class="form-group form-group--checkbox">
-              <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required />
-              <label for="privacy" class="form-label form-label--checkbox">
-                He leído y acepto el <a href="#" class="form-link">aviso de privacidad</a> y el tratamiento de mis datos personales. *
+            <div class="form-group form-group--check">
+              <input type="checkbox" id="f-privacy" name="privacidad" class="form-checkbox" required />
+              <label for="f-privacy" class="form-label--check">
+                He leído y acepto el <a href="#" class="form-link">Aviso de Privacidad</a>. *
               </label>
-              <span class="form-error" id="privacyError">Debe aceptar el aviso de privacidad.</span>
+              <span class="form-error form-error--block" id="err-privacy">Acepte el aviso de privacidad.</span>
             </div>
 
-            <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+            <button type="submit" class="btn btn--submit">
+              <span class="btn__text">Enviar mensaje</span>
+              <span class="btn__loader" aria-hidden="true"></span>
+            </button>
 
-            <!-- Mensaje de éxito (oculto hasta envío) -->
-            <div class="form-success" id="formSuccess" hidden>
-              <span>✓</span> Gracias por contactarnos. Le responderemos en menos de 24 horas hábiles.
+            <div class="form-success" id="formSuccess" hidden role="alert">
+              ✓ Gracias por contactarnos. Le responderemos a la brevedad.
             </div>
+
           </form>
         </div>
 
@@ -591,74 +563,74 @@
 
   </main>
 
-  <!-- ==============================
-       FOOTER
-  ================================ -->
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container footer__inner">
 
       <div class="footer__brand">
-        <a href="#inicio" class="logo logo--light">
-          <span class="logo__icon">⚖</span>
+        <a href="#inicio" class="logo logo--footer" aria-label="CAPÍN CONSULTORES inicio">
+          <div class="logo__mark logo__mark--sm" aria-hidden="true">CC</div>
           <div class="logo__text">
-            <span class="logo__name">Garza &amp; Asociados</span>
-            <span class="logo__tagline">Abogados Corporativos</span>
+            <span class="logo__name">CAPÍN CONSULTORES</span>
+            <span class="logo__sub">S.C.</span>
           </div>
         </a>
-        <p class="footer__brand-text">Asesoría jurídica corporativa de alto nivel para empresas en México y con presencia internacional.</p>
+        <p class="footer__address">
+          Bosque de Ciruelos #186 Piso 1<br/>
+          C.P. 11700, Ciudad de México<br/>
+          <a href="tel:+525552805616">+52 (55) 5280 5616</a>
+        </p>
+        <p class="footer__intl">🌍 También en París, Francia</p>
       </div>
 
-      <div class="footer__links">
-        <h4 class="footer__heading">Servicios</h4>
+      <nav class="footer__nav" aria-label="Navegación del footer">
+        <h4 class="footer__heading">La Firma</h4>
         <ul class="footer__list">
-          <li><a href="#servicios">Derecho Corporativo</a></li>
-          <li><a href="#servicios">Fusiones y Adquisiciones</a></li>
-          <li><a href="#servicios">Contratos Comerciales</a></li>
-          <li><a href="#servicios">Cumplimiento Normativo</a></li>
-          <li><a href="#servicios">Litigio Mercantil</a></li>
+          <li><a href="#quienes-somos">Quiénes Somos</a></li>
+          <li><a href="#adn">Nuestro ADN</a></li>
+          <li><a href="#integrantes">Integrantes</a></li>
+          <li><a href="#alianzas">Alianzas</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <div class="footer__links">
-        <h4 class="footer__heading">Despacho</h4>
+      <nav class="footer__nav" aria-label="Áreas de práctica">
+        <h4 class="footer__heading">Áreas de Práctica</h4>
         <ul class="footer__list">
-          <li><a href="#nosotros">Sobre nosotros</a></li>
-          <li><a href="#industrias">Industrias</a></li>
-          <li><a href="#proceso">Nuestro proceso</a></li>
-          <li><a href="#testimonios">Clientes</a></li>
-          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#areas">Arbitraje</a></li>
+          <li><a href="#areas">Corporativo</a></li>
+          <li><a href="#areas">Fiscal</a></li>
+          <li><a href="#areas">Laboral</a></li>
+          <li><a href="#areas">Comercio Exterior</a></li>
+          <li><a href="#areas">Ver todas →</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <div class="footer__links">
-        <h4 class="footer__heading">Contacto</h4>
-        <ul class="footer__list footer__list--contact">
-          <li>Reforma 350, Piso 18, CDMX</li>
-          <li><a href="tel:+525512345678">+52 55 1234 5678</a></li>
-          <li><a href="mailto:contacto@garzayasociados.mx">contacto@garzayasociados.mx</a></li>
-        </ul>
+      <div class="footer__contact-col">
+        <h4 class="footer__heading">Contáctenos</h4>
+        <a href="#contacto" class="btn btn--primary btn--sm">Enviar consulta</a>
+        <a href="https://wa.me/525552805616" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--sm" style="margin-top:10px">WhatsApp</a>
       </div>
 
     </div>
 
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p class="footer__copy">&copy; <span id="footerYear"></span> Garza &amp; Asociados. Todos los derechos reservados.</p>
-        <nav class="footer__legal" aria-label="Avisos legales">
-          <a href="#">Aviso de privacidad</a>
-          <a href="#">Términos de uso</a>
-        </nav>
+        <p class="footer__legal-copy">
+          <a href="#">Aviso de Privacidad</a>
+          &nbsp;|&nbsp;
+          &copy; <span id="footerYear"></span> CAPÍN CONSULTORES, S.C. Todos los derechos reservados.
+        </p>
       </div>
     </div>
   </footer>
 
-  <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/525512345678?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
+  <!-- FAB WhatsApp -->
+  <a href="https://wa.me/525552805616?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."
      class="whatsapp-fab"
      target="_blank"
      rel="noopener noreferrer"
      aria-label="Contactar por WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
   <script src="script.js"></script>
