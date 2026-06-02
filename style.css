@@ -1199,7 +1199,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-top: -8px;
+  margin-top: 4px;
 }
 
 .team-card__bio {
