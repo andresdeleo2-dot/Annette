@@ -1,6 +1,6 @@
 /* ================================================
    CAPÍN CONSULTORES, S.C. — script.js
-   Sistema bilingüe ES / EN sin dependencias.
+   Bilingüe ES/EN · Formulario → mailto:luis.capin@ci-lex.com
 ================================================ */
 
 'use strict';
@@ -11,100 +11,107 @@
 const translations = {
 
   es: {
-    /* Navegación */
-    'nav.about':     'Quiénes Somos',
-    'nav.adn':       'Nuestro ADN',
-    'nav.areas':     'Áreas de Práctica',
-    'nav.team':      'Integrantes',
-    'nav.alliances': 'Alianzas',
-    'nav.contact':   'Contacto',
+    /* Nav */
+    'nav.about':    'Nosotros',
+    'nav.services': 'Servicios',
+    'nav.team':     'Equipo',
+    'nav.clients':  'Clientes',
+    'nav.contact':  'Contacto',
 
     /* Hero */
     'hero.badge':   'Firma de Abogados · México & París',
-    'hero.tagline': 'Los más altos estándares de calidad en el marco jurídico de México y el extranjero',
-    'hero.cta1':    'Áreas de práctica',
+    'hero.tagline': 'Soluciones jurídicas a la medida para empresas mexicanas e internacionales que operan en México',
+    'hero.cta1':    'Nuestros Servicios',
     'hero.cta2':    'Contactar ahora',
-    'hero.pillar1': 'Profesionalismo',
-    'hero.pillar2': 'Cobertura Internacional',
-    'hero.pillar3': 'Servicio Integral',
+    'hero.pillar1': 'Derecho Corporativo',
+    'hero.pillar2': 'Visión Global',
+    'hero.pillar3': 'Red CI-LEX',
     'hero.scroll':  'Conocer más',
 
-    /* Quiénes somos */
-    'qs.eyebrow':   'Quiénes Somos',
-    'qs.title':     'Una firma con experiencia, visión y alcance global',
-    'qs.lead':      'CAPÍN CONSULTORES S.C. es una Firma de Abogados con gran experiencia profesional que le permite brindar a sus clientes los más altos estándares de calidad y oportunidad en sus servicios, permitiendo con ello el desarrollo dentro del marco jurídico en México y en el extranjero, ayudándolos a posicionarse como empresas de clase mundial en los diferentes mercados en que se desarrollan.',
-    'qs.sub':       'Nuestra filosofía está inspirada en valores éticos y de servicio, garantizando la confianza depositada por nuestros clientes.',
-    'qs.p1.title':  'Profesionalismo',
-    'qs.p1.text':   'Las áreas en las que la Firma desempeña sus actividades se encuentran dirigidas por profesionistas con estándares de conocimiento y probidad de primer nivel, los cuales han participado en distintos foros, tanto nacionales como internacionales, así como en la impartición de importantes cátedras en prestigiadas universidades.',
-    'qs.p2.title':  'Servicio Integral',
-    'qs.p2.text':   'Prestamos un servicio que comprende tanto los aspectos preventivos como los correctivos, frente a las necesidades particulares de nuestros clientes, asegurándoles estabilidad y anticipándonos a las posibles contingencias que pudieran surgir en la operación de sus negocios.',
-    'qs.p3.title':  'Cobertura',
-    'qs.p3.text':   'CAPÍN CONSULTORES, S.C. desempeña un papel importante y de gran influencia, tanto en México como en el extranjero, contando con una <strong>oficina en París, Francia</strong>, y diversas alianzas estratégicas con firmas independientes en la República Mexicana y alrededor del mundo.',
+    /* Nosotros */
+    'about.eyebrow':  'Nosotros',
+    'about.title':    'Experiencia local, perspectiva global',
+    'about.lead':     'Capín Consultores es un despacho de abogados dedicado a brindar soluciones jurídicas a la medida para empresas mexicanas e internacionales que operan en México. Con décadas de experiencia en Derecho Corporativo y Empresarial, combinamos un profundo conocimiento local con una perspectiva global, ofreciendo estrategias innovadoras y confiables diseñadas para proteger y optimizar las inversiones de nuestros clientes.',
+    'about.sub':      'Nuestro equipo multicultural, con dominio del español, inglés y francés, está equipado para asistir a clientes de orígenes diversos con comprensión real del entorno internacional.',
+    'about.p1.title': 'Enfoque Multidisciplinario',
+    'about.p1.text':  'Ofrecemos un enfoque multidisciplinario en áreas clave como gobierno corporativo, asesoría fiscal, resolución de controversias, derecho marítimo y estrategias de inversión extranjera, garantizando apoyo integral en cada etapa del crecimiento de nuestros clientes.',
+    'about.p2.title': 'Red CI-LEX',
+    'about.p2.text':  'A través de nuestra colaboración con la red CI-LEX y un selecto grupo de expertos externos, brindamos apoyo integral en materias como fiscal, laboral, litigio e inmobiliario, asegurando asesoría legal completa y coordinada para nuestros clientes.',
+    'about.p3.title': 'Comprometidos con la Excelencia',
+    'about.p3.text':  'Desde el cumplimiento corporativo hasta la resolución alternativa de disputas, nos enorgullecemos de entregar resultados que superan las expectativas. En Capín Consultores somos más que asesores legales — somos socios estratégicos en el éxito de nuestros clientes.',
 
-    /* ADN */
-    'adn.eyebrow':  '02',
-    'adn.title':    'Nuestro ADN',
-    'adn.subtitle': 'Los principios que guían cada decisión y cada servicio que brindamos.',
-    'adn.v1.title': 'Sinergia',
-    'adn.v1.text':  'Con una eficiente comunicación y profunda colaboración, aprovechamos la experiencia de cada uno de nuestros integrantes en su correspondiente área de especialización, en favor de los requerimientos específicos de nuestros clientes.',
-    'adn.v2.title': 'Vanguardia',
-    'adn.v2.text':  'Estamos permanentemente actualizados, tanto en las reformas de ley y criterios judiciales, como en las innovaciones tecnológicas y de servicio, para ofrecer la mejor estrategia posible, brindando con ello la atención más completa y adecuada.',
-    'adn.v3.title': 'Respuesta',
-    'adn.v3.text':  'En todo momento, en horarios de oficina o fuera de ellos, estamos disponibles para atender los requerimientos de nuestros clientes y proponer una solución a sus problemas.',
-    'adn.v4.title': 'Prontitud',
-    'adn.v4.text':  'Llevamos cada asunto con la mayor agilidad posible, aprovechando al máximo todos los recursos a nuestro alcance para ofrecer un desempeño eficiente.',
-    'adn.v5.title': 'Garantía',
-    'adn.v5.text':  'Contamos con un Departamento de Representación del Cliente, al que se puede recurrir en caso de no haber quedado completamente satisfechos sus requerimientos.',
+    /* Servicios */
+    'services.eyebrow':  '02',
+    'services.title':    'Nuestros Servicios',
+    'services.subtitle': 'Soluciones especializadas diseñadas para atender las diversas necesidades de su empresa en México.',
+    'srv.corp.title': 'Derecho Corporativo',
+    'srv.corp.1': 'Contratos civiles y mercantiles',
+    'srv.corp.2': 'Fusiones y Adquisiciones (M&A)',
+    'srv.corp.3': 'Cumplimiento normativo',
+    'srv.corp.4': 'Constitución de sociedades mexicanas',
+    'srv.corp.5': 'Oficinas de representación y establecimientos permanentes',
+    'srv.corp.6': 'Disolución o fusión de entidades comerciales',
+    'srv.corp.7': 'Poderes notariales, aumentos y reducciones de capital',
+    'srv.tax.title': 'Derecho Fiscal',
+    'srv.tax.1': 'IVA e IEPS',
+    'srv.tax.2': 'Operaciones transaccionales',
+    'srv.tax.3': 'Precios de transferencia',
+    'srv.tax.4': 'Convenios para evitar doble tributación',
+    'srv.tax.5': 'Planeación y optimización fiscal',
+    'srv.tax.6': 'Asesoría fiscal para personal expatriado',
+    'srv.tax.7': 'Programas IMMEX y promoción al comercio exterior',
+    'srv.labor.title': 'Derecho Laboral y Migratorio',
+    'srv.labor.1': 'Régimen de Seguridad Social',
+    'srv.labor.2': 'Contratos laborales y terminaciones',
+    'srv.labor.3': 'Certificación REPSE',
+    'srv.labor.4': 'Documentos contractuales y extracontractuales',
+    'srv.labor.5': 'Visas y permisos de trabajo para extranjeros',
+    'srv.labor.6': 'Gestión de personal extranjero en México',
+    'srv.labor.7': 'Procesos de naturalización',
+    'srv.adr.title': 'Resolución Alternativa de Controversias',
+    'srv.adr.1': 'Mediación privada en disputas civiles y mercantiles',
+    'srv.adr.2': 'Mediación familiar',
+    'srv.adr.3': 'Arbitraje internacional bajo reglas ICC',
+    'srv.adr.4': 'Mediación preventiva en disputas contractuales',
 
-    /* Áreas */
-    'areas.eyebrow':  '03',
-    'areas.title':    'Áreas de Práctica',
-    'areas.subtitle': 'Cobertura jurídica integral para cada necesidad de su empresa.',
-    'areas.cta':      '¿No encuentra su área? <a href="#contacto" class="areas-cta__link">Contáctenos y evaluamos su caso</a>',
-    'area.1':  'Arbitraje',
-    'area.2':  'Administrativo',
-    'area.3':  'Comercio Exterior',
-    'area.4':  'Constitucional',
-    'area.5':  'Contratación Pública',
-    'area.6':  'Corporativo',
-    'area.7':  'Energía',
-    'area.8':  'Fiscal',
-    'area.9':  'Internacional',
-    'area.10': 'Laboral',
-    'area.11': 'Litigio Civil y Mercantil',
-    'area.12': 'Mediación',
-    'area.13': 'Migratorio',
-    'area.14': 'Salud',
-    'area.15': 'Telecomunicaciones',
-    'area.16': 'Propiedad Industrial',
-    'form.area.other': 'Otra',
+    /* Equipo */
+    'team.eyebrow':   '03',
+    'team.title':     'Nuestro Equipo',
+    'team.subtitle':  'Profesionales con experiencia transnacional que comprenden los matices del negocio internacional.',
+    'team.partners':  'Socios',
+    'team.associates':'Asociados',
+    'team.founding':  'Socio Fundador',
+    'team.partner':   'Socio',
+    'team.counsel':   'Of Counsel',
+    'team.associate': 'Asociado',
+    'team.trainee':   'Pasante',
+    'team.luis.bio':  'Abogado y mediador privado con más de 40 años de experiencia en Derecho Empresarial, Fiscal e Inversión Extranjera. Miembro del Colegio de Abogados de París desde 1991.',
+    'team.jesus.bio': 'Abogado mercantil que se incorporó a la firma en 2021, con experiencia previa en departamentos jurídicos de grandes corporativos como Grupo México, Grupo Carso y Grupo TMM.',
+    'team.steph.bio': 'Egresada de la Universidad de Lille y miembro del Colegio de Abogados de París. Más de 15 años de experiencia en Derecho Internacional de Negocios y Arbitraje. Socia desde 2016.',
+    'team.jca.bio':   '22 años de experiencia en comercio internacional y defensa comercial, y más de 10 en derecho fiscal. Especialista en energía, asesoría fiscal y contratos.',
+    'team.jr.bio':    'Más de 23 años de experiencia en derecho migratorio corporativo. Especialista en contratación y gestión de personal extranjero en México, procesos de naturalización y cumplimiento migratorio.',
+    'team.rr.bio':    'Especialista en constitución de sociedades mexicanas con inversión extranjera y establecimiento de sucursales extranjeras en México. Estatutos, asambleas y acuerdos de accionistas.',
+    'team.ms.bio':    'Estudiante de Derecho en la Universidad Nacional Autónoma de México con interés en derecho mercantil y laboral. Se incorporó a la firma en 2023.',
 
-    /* Integrantes */
-    'team.eyebrow':  '04',
-    'team.title':    'Integrantes',
-    'team.subtitle': 'Los socios fundadores de CAPÍN CONSULTORES, S.C. cuentan con suficiente experiencia en el mercado — una institución joven con amplia experiencia que tiene como finalidad comprender las necesidades específicas de cada uno de sus clientes para así obtener los mejores resultados.',
-    'team.founder':  'Socio Fundador',
-    'team.partner':  'Socio',
-    'team.note':     'Las áreas en las que la Firma desempeña sus actividades se encuentran dirigidas por profesionistas con los más altos estándares de conocimiento y probidad, los cuales han participado en distintos foros, tanto nacionales como internacionales, así como en la impartición de importantes cátedras en distintas universidades.',
-
-    /* Alianzas */
-    'alliances.eyebrow':  '05',
-    'alliances.title':    'Alianzas Estratégicas',
-    'alliances.subtitle': 'Colaboramos con firmas de primer nivel en México y el mundo para ofrecer cobertura jurídica sin fronteras.',
-    'alliances.ilf':  'Red internacional de despachos independientes',
-    'alliances.hc':   'Especialistas en Derecho Laboral',
-    'alliances.dca':  'Litigio Civil y Mercantil · Telecomunicaciones',
-    'alliances.cr':   'Especialistas en Derecho Migratorio',
+    /* Clientes */
+    'clients.eyebrow':  '04',
+    'clients.title':    'Nuestros Clientes',
+    'clients.subtitle': 'Empresas multinacionales y locales confían en Capín Consultores para navegar el entorno jurídico mexicano con soluciones estratégicas a la medida.',
+    'clients.pharma':   'Farma & Dermo-Cosmética',
+    'clients.maritime': 'Marítimo & Automotriz',
+    'clients.tech':     'Tecnología & Comunicaciones',
 
     /* Contacto */
-    'contact.eyebrow':    '06',
+    'contact.eyebrow':    '05',
     'contact.title':      'Contáctenos',
-    'contact.lead':       'Favor de proporcionar sus datos y nos comunicaremos con usted a la brevedad.',
+    'contact.lead':       'Proporcione sus datos y nos comunicaremos con usted a la brevedad.',
     'contact.addr.label': 'Dirección',
     'contact.phone.label':'Teléfono',
+    'contact.email.label':'Correo electrónico',
+    'contact.web.label':  'Sitio web',
     'contact.intl.label': 'Presencia internacional',
     'contact.intl.value': 'México · París, Francia',
-    'contact.call':       'Llamar',
+    'contact.call':       'Llamar ahora',
 
     /* Formulario */
     'form.name':         'Nombre *',
@@ -115,12 +122,13 @@ const translations = {
     'form.phone':        'Teléfono',
     'form.area':         'Área de interés',
     'form.area.ph':      'Seleccione un área…',
+    'form.area.other':   'Otra',
     'form.message':      'Mensaje *',
     'form.message.ph':   'Describa brevemente su asunto o consulta…',
     'form.privacy':      'He leído y acepto el',
     'form.privacy.link': 'Aviso de Privacidad',
     'form.submit':       'Enviar mensaje',
-    'form.success':      '✓ Gracias por contactarnos. Le responderemos a la brevedad.',
+    'form.success':      '✓ Su mensaje fue enviado. Le responderemos a la brevedad.',
     'form.err.name':     'Ingrese su nombre.',
     'form.err.email':    'Ingrese un email válido.',
     'form.err.message':  'Ingrese su mensaje.',
@@ -129,107 +137,113 @@ const translations = {
     /* Footer */
     'footer.firm':    'La Firma',
     'footer.intl':    '🌍 También en París, Francia',
-    'footer.seeall':  'Ver todas →',
     'footer.consult': 'Enviar consulta',
     'footer.privacy': 'Aviso de Privacidad',
     'footer.rights':  'Todos los derechos reservados.',
   },
 
   en: {
-    /* Navigation */
-    'nav.about':     'About Us',
-    'nav.adn':       'Our DNA',
-    'nav.areas':     'Practice Areas',
-    'nav.team':      'Our Team',
-    'nav.alliances': 'Alliances',
-    'nav.contact':   'Contact',
+    /* Nav */
+    'nav.about':    'About Us',
+    'nav.services': 'Services',
+    'nav.team':     'Our Team',
+    'nav.clients':  'Clients',
+    'nav.contact':  'Contact',
 
     /* Hero */
     'hero.badge':   'Law Firm · Mexico & Paris',
-    'hero.tagline': 'The highest standards of quality within the legal framework of Mexico and abroad',
-    'hero.cta1':    'Practice Areas',
+    'hero.tagline': 'Tailored legal solutions for Mexican and international companies operating in Mexico',
+    'hero.cta1':    'Our Services',
     'hero.cta2':    'Contact Us',
-    'hero.pillar1': 'Professionalism',
-    'hero.pillar2': 'International Reach',
-    'hero.pillar3': 'Full-Service',
+    'hero.pillar1': 'Corporate Law',
+    'hero.pillar2': 'Global Vision',
+    'hero.pillar3': 'CI-LEX Network',
     'hero.scroll':  'Learn more',
 
     /* About */
-    'qs.eyebrow':   'About Us',
-    'qs.title':     'A firm with experience, vision, and global reach',
-    'qs.lead':      'CAPÍN CONSULTORES S.C. is a Law Firm with extensive professional experience that allows it to provide its clients with the highest standards of quality and timely service, enabling their development within the legal framework of Mexico and abroad, and helping them position themselves as world-class companies in the different markets where they operate.',
-    'qs.sub':       'Our philosophy is inspired by ethical values and a commitment to service, guaranteeing the trust placed in us by our clients.',
-    'qs.p1.title':  'Professionalism',
-    'qs.p1.text':   'The practice areas of the Firm are led by professionals with first-class standards of knowledge and integrity, who have participated in various forums both nationally and internationally, as well as taught courses at prestigious universities.',
-    'qs.p2.title':  'Full-Service',
-    'qs.p2.text':   'We provide a service that covers both preventive and corrective aspects, addressing the specific needs of our clients, ensuring their stability and anticipating potential contingencies that may arise in their business operations.',
-    'qs.p3.title':  'Coverage',
-    'qs.p3.text':   'CAPÍN CONSULTORES, S.C. plays an important and influential role both in Mexico and abroad, with an <strong>office in Paris, France</strong>, and various strategic alliances with independent firms throughout Mexico and around the world.',
+    'about.eyebrow':  'About Us',
+    'about.title':    'Local Expertise, Global Perspective',
+    'about.lead':     'Capín Consultores is a law firm dedicated to providing tailored legal solutions to Mexican and international companies operating in Mexico. With decades of expertise in Corporate and Business Law, our practice combines deep local knowledge with a global perspective, enabling us to deliver innovative and trustworthy strategies designed to safeguard and optimize our clients\' investments.',
+    'about.sub':      'Our multicultural team, fluent in English, Spanish, and French, is uniquely equipped to assist clients from diverse backgrounds with genuine understanding of the international business environment.',
+    'about.p1.title': 'Multidisciplinary Approach',
+    'about.p1.text':  'We offer a multidisciplinary approach across key areas including corporate governance, tax advisory, dispute resolution, maritime law, and foreign investment strategies, ensuring seamless support at every stage of our clients\' growth and operation in Mexico.',
+    'about.p2.title': 'CI-LEX Network',
+    'about.p2.text':  'Through our collaboration with the CI-LEX network and a carefully curated roster of-counsel experts, Capín Consultores provides holistic support across disciplines such as taxation, labor law, litigation, and real estate, ensuring comprehensive and coordinated legal advice.',
+    'about.p3.title': 'Committed to Excellence',
+    'about.p3.text':  'From corporate compliance to alternative dispute resolution, we pride ourselves on delivering results that go beyond expectations. At Capín Consultores, we are more than legal advisors — we are strategic partners in our clients\' success.',
 
-    /* DNA */
-    'adn.eyebrow':  '02',
-    'adn.title':    'Our DNA',
-    'adn.subtitle': 'The principles that guide every decision and every service we provide.',
-    'adn.v1.title': 'Synergy',
-    'adn.v1.text':  'Through efficient communication and deep collaboration, we leverage the expertise of each of our team members in their respective areas of specialization to meet the specific needs of our clients.',
-    'adn.v2.title': 'Cutting-Edge',
-    'adn.v2.text':  'We remain permanently up to date on legislative reforms, judicial criteria, and technological and service innovations to offer the best possible strategy, providing the most comprehensive and appropriate attention to our clients.',
-    'adn.v3.title': 'Responsiveness',
-    'adn.v3.text':  'At all times, during or outside of office hours, we are available to address our clients\' needs and propose solutions to their problems.',
-    'adn.v4.title': 'Promptness',
-    'adn.v4.text':  'We handle every matter with the greatest agility possible, making the most of all available resources to deliver an efficient performance.',
-    'adn.v5.title': 'Guarantee',
-    'adn.v5.text':  'We have a Client Representation Department that can be contacted if the client\'s requirements have not been fully met.',
-
-    /* Practice Areas */
-    'areas.eyebrow':  '03',
-    'areas.title':    'Practice Areas',
-    'areas.subtitle': 'Comprehensive legal coverage for every business need.',
-    'areas.cta':      'Can\'t find your area? <a href="#contacto" class="areas-cta__link">Contact us and we\'ll evaluate your case</a>',
-    'area.1':  'Arbitration',
-    'area.2':  'Administrative',
-    'area.3':  'Foreign Trade',
-    'area.4':  'Constitutional',
-    'area.5':  'Public Procurement',
-    'area.6':  'Corporate',
-    'area.7':  'Energy',
-    'area.8':  'Tax',
-    'area.9':  'International',
-    'area.10': 'Labor',
-    'area.11': 'Civil & Commercial Litigation',
-    'area.12': 'Mediation',
-    'area.13': 'Immigration',
-    'area.14': 'Healthcare',
-    'area.15': 'Telecommunications',
-    'area.16': 'Industrial Property',
-    'form.area.other': 'Other',
+    /* Services */
+    'services.eyebrow':  '02',
+    'services.title':    'Our Services',
+    'services.subtitle': 'Specialized solutions designed to meet the diverse legal needs of your business in Mexico.',
+    'srv.corp.title': 'Corporate Law',
+    'srv.corp.1': 'Civil and commercial contracts',
+    'srv.corp.2': 'Mergers & Acquisitions (M&A)',
+    'srv.corp.3': 'Compliance',
+    'srv.corp.4': 'Mexican entities with or without foreign investment',
+    'srv.corp.5': 'Branch and representative offices with permanent establishments',
+    'srv.corp.6': 'Dissolution or merger of commercial entities',
+    'srv.corp.7': 'Powers of attorney, capital increases and decreases',
+    'srv.tax.title': 'Tax Law',
+    'srv.tax.1': 'VAT and IEPS',
+    'srv.tax.2': 'Transactional operations',
+    'srv.tax.3': 'Transfer pricing compliance',
+    'srv.tax.4': 'Double taxation treaties',
+    'srv.tax.5': 'Tax planning and optimization strategies',
+    'srv.tax.6': 'Tax advisory for expatriate personnel',
+    'srv.tax.7': 'IMMEX and trade promotion programs',
+    'srv.labor.title': 'Labor & Immigration Law',
+    'srv.labor.1': 'Social security regime',
+    'srv.labor.2': 'Employment contracts and terminations',
+    'srv.labor.3': 'REPSE certification',
+    'srv.labor.4': 'Contractual and extra-contractual documents',
+    'srv.labor.5': 'Visas and work permits for foreign nationals',
+    'srv.labor.6': 'Management of foreign personnel in Mexico',
+    'srv.labor.7': 'Naturalization processes',
+    'srv.adr.title': 'Alternative Dispute Resolution',
+    'srv.adr.1': 'Private mediation for civil and commercial disputes',
+    'srv.adr.2': 'Family mediation services',
+    'srv.adr.3': 'International arbitration under ICC rules',
+    'srv.adr.4': 'Preventive mediation for contract disputes',
 
     /* Team */
-    'team.eyebrow':  '04',
-    'team.title':    'Our Team',
-    'team.subtitle': 'The founding partners of CAPÍN CONSULTORES, S.C. bring extensive market experience — a young institution with broad expertise whose goal is to understand the specific needs of each client in order to achieve the best possible results.',
-    'team.founder':  'Founding Partner',
-    'team.partner':  'Partner',
-    'team.note':     'The practice areas of the Firm are led by professionals with the highest standards of knowledge and integrity, who have participated in various national and international forums, as well as taught courses at different universities.',
+    'team.eyebrow':   '03',
+    'team.title':     'Our Team',
+    'team.subtitle':  'Professionals with transnational experience who understand the nuances of international business.',
+    'team.partners':  'Partners',
+    'team.associates':'Associates',
+    'team.founding':  'Founding Partner',
+    'team.partner':   'Partner',
+    'team.counsel':   'Of Counsel',
+    'team.associate': 'Associate',
+    'team.trainee':   'Law Trainee',
+    'team.luis.bio':  'Lawyer and private mediator with more than 40 years of experience in Business, Tax and Foreign Investment Law. Member of the Paris Bar since 1991.',
+    'team.jesus.bio': 'Commercial lawyer who joined the firm in 2021, with prior experience in the legal departments of large companies including Grupo México, Grupo Carso, and Grupo TMM.',
+    'team.steph.bio': 'Graduate of the University of Lille and registered at the Paris Bar. Over 15 years of experience in International Business Law and Arbitration. Partner since 2016.',
+    'team.jca.bio':   '22 years of experience in international trade and trade defense, and over 10 years in tax law. Specialist in energy, tax advisory, and contract negotiation.',
+    'team.jr.bio':    'Over 23 years of experience in corporate immigration law. Specialist in the recruitment and management of foreign personnel in Mexico, naturalization processes, and immigration compliance.',
+    'team.rr.bio':    'Specialist in the incorporation of Mexican companies with foreign investment and the establishment of foreign branches in Mexico. Corporate bylaws, assembly minutes, and shareholder agreements.',
+    'team.ms.bio':    'Law student at Universidad Nacional Autónoma de México with interests in commercial and labor law. With the firm since 2023.',
 
-    /* Alliances */
-    'alliances.eyebrow':  '05',
-    'alliances.title':    'Strategic Alliances',
-    'alliances.subtitle': 'We collaborate with top-tier firms in Mexico and around the world to provide seamless cross-border legal coverage.',
-    'alliances.ilf':  'International network of independent law firms',
-    'alliances.hc':   'Labor Law specialists',
-    'alliances.dca':  'Civil & Commercial Litigation · Telecommunications',
-    'alliances.cr':   'Immigration Law specialists',
+    /* Clients */
+    'clients.eyebrow':  '04',
+    'clients.title':    'Our Clients',
+    'clients.subtitle': 'Multinational and local companies trust Capín Consultores to navigate the Mexican legal landscape with tailored strategic solutions.',
+    'clients.pharma':   'Pharma & Dermo-Cosmetic',
+    'clients.maritime': 'Maritime & Automotive',
+    'clients.tech':     'New Technologies & Communications',
 
     /* Contact */
-    'contact.eyebrow':    '06',
+    'contact.eyebrow':    '05',
     'contact.title':      'Contact Us',
     'contact.lead':       'Please provide your information and we will get back to you shortly.',
     'contact.addr.label': 'Address',
     'contact.phone.label':'Phone',
+    'contact.email.label':'Email',
+    'contact.web.label':  'Website',
     'contact.intl.label': 'International presence',
     'contact.intl.value': 'Mexico · Paris, France',
-    'contact.call':       'Call',
+    'contact.call':       'Call now',
 
     /* Form */
     'form.name':         'Name *',
@@ -240,12 +254,13 @@ const translations = {
     'form.phone':        'Phone',
     'form.area':         'Area of interest',
     'form.area.ph':      'Select an area…',
+    'form.area.other':   'Other',
     'form.message':      'Message *',
     'form.message.ph':   'Briefly describe your matter or inquiry…',
     'form.privacy':      'I have read and accept the',
     'form.privacy.link': 'Privacy Policy',
     'form.submit':       'Send message',
-    'form.success':      '✓ Thank you for contacting us. We will respond shortly.',
+    'form.success':      '✓ Your message has been sent. We will respond shortly.',
     'form.err.name':     'Please enter your name.',
     'form.err.email':    'Please enter a valid email.',
     'form.err.message':  'Please enter your message.',
@@ -254,7 +269,6 @@ const translations = {
     /* Footer */
     'footer.firm':    'The Firm',
     'footer.intl':    '🌍 Also in Paris, France',
-    'footer.seeall':  'See all →',
     'footer.consult': 'Send inquiry',
     'footer.privacy': 'Privacy Policy',
     'footer.rights':  'All rights reserved.',
@@ -270,37 +284,28 @@ function applyLang(lang) {
   const t = translations[lang];
   if (!t) return;
 
-  const html = document.documentElement;
-  html.setAttribute('lang', lang === 'es' ? 'es-MX' : 'en');
-  html.setAttribute('data-lang', lang);
+  document.documentElement.setAttribute('lang', lang === 'es' ? 'es-MX' : 'en');
+  document.documentElement.setAttribute('data-lang', lang);
 
-  /* Actualizar title del documento */
   document.title = lang === 'es'
     ? 'CAPÍN CONSULTORES, S.C. | Firma de Abogados en México'
     : 'CAPÍN CONSULTORES, S.C. | Law Firm in Mexico';
 
-  /* Actualizar meta description */
   const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) {
-    metaDesc.setAttribute('content', lang === 'es'
-      ? 'CAPÍN CONSULTORES, S.C. es una Firma de Abogados con presencia en México y París, especializada en más de 16 áreas de práctica.'
-      : 'CAPÍN CONSULTORES, S.C. is a Law Firm with offices in Mexico and Paris, specialized in over 16 practice areas.');
-  }
+  if (metaDesc) metaDesc.setAttribute('content', lang === 'es'
+    ? 'Capín Consultores es un despacho de abogados dedicado a brindar soluciones jurídicas a la medida para empresas que operan en México.'
+    : 'Capín Consultores is a law firm dedicated to providing tailored legal solutions to companies operating in Mexico.');
 
-  /* Traducir todos los elementos con data-i18n (innerHTML para tags como <strong>) */
+  /* Texto e innerHTML */
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (t[key] !== undefined) {
-      el.innerHTML = t[key];
-    }
+    if (t[key] !== undefined) el.innerHTML = t[key];
   });
 
-  /* Traducir placeholders */
+  /* Placeholders */
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
-    if (t[key] !== undefined) {
-      el.setAttribute('placeholder', t[key]);
-    }
+    if (t[key] !== undefined) el.setAttribute('placeholder', t[key]);
   });
 
   currentLang = lang;
@@ -308,34 +313,28 @@ function applyLang(lang) {
 }
 
 /* ================================================
-   AÑO ACTUAL EN FOOTER
+   AÑO FOOTER
 ================================================ */
 const yearEl = document.getElementById('footerYear');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* ================================================
-   HEADER: efecto scroll
+   HEADER SCROLL
 ================================================ */
 const header = document.getElementById('header');
-
-const onScroll = () => {
-  header.classList.toggle('scrolled', window.scrollY > 48);
-};
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 48);
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
 /* ================================================
-   BOTÓN DE IDIOMA
+   BOTÓN IDIOMA
 ================================================ */
-const langToggle = document.getElementById('langToggle');
-
-langToggle.addEventListener('click', () => {
-  const newLang = currentLang === 'es' ? 'en' : 'es';
-  applyLang(newLang);
+document.getElementById('langToggle').addEventListener('click', () => {
+  applyLang(currentLang === 'es' ? 'en' : 'es');
 });
 
 /* ================================================
-   MENÚ HAMBURGUESA (móvil)
+   MENÚ HAMBURGUESA
 ================================================ */
 const hamburger = document.getElementById('hamburger');
 const nav       = document.getElementById('nav');
@@ -348,19 +347,11 @@ function openNav(open) {
 }
 
 hamburger.addEventListener('click', () => openNav(!nav.classList.contains('open')));
-
-nav.querySelectorAll('.nav__link').forEach(link => {
-  link.addEventListener('click', () => openNav(false));
-});
-
+nav.querySelectorAll('.nav__link').forEach(l => l.addEventListener('click', () => openNav(false)));
 document.addEventListener('click', e => {
-  if (nav.classList.contains('open') &&
-      !nav.contains(e.target) &&
-      !hamburger.contains(e.target)) {
+  if (nav.classList.contains('open') && !nav.contains(e.target) && !hamburger.contains(e.target))
     openNav(false);
-  }
 });
-
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && nav.classList.contains('open')) openNav(false);
 });
@@ -375,33 +366,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const target = document.querySelector(id);
     if (!target) return;
     e.preventDefault();
-    const offset = header.offsetHeight + 12;
-    const top    = target.getBoundingClientRect().top + window.scrollY - offset;
+    const top = target.getBoundingClientRect().top + window.scrollY - header.offsetHeight - 12;
     window.scrollTo({ top, behavior: 'smooth' });
   });
 });
 
 /* ================================================
-   NAV LINK ACTIVO
+   NAV ACTIVO
 ================================================ */
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav__link:not(.nav__link--cta)');
 
-const sectionObs = new IntersectionObserver(entries => {
+new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.classList.toggle('nav__link--active',
-          link.getAttribute('href') === `#${entry.target.id}`);
-      });
-    }
+    if (entry.isIntersecting)
+      navLinks.forEach(l => l.classList.toggle('nav__link--active',
+        l.getAttribute('href') === `#${entry.target.id}`));
   });
-}, { rootMargin: '-40% 0px -55% 0px' });
-
-sections.forEach(s => sectionObs.observe(s));
+}, { rootMargin: '-40% 0px -55% 0px' }).observe
+  && sections.forEach(s => new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting)
+        navLinks.forEach(l => l.classList.toggle('nav__link--active',
+          l.getAttribute('href') === `#${entry.target.id}`));
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' }).observe(s));
 
 /* ================================================
-   ANIMACIONES DE ENTRADA
+   ANIMACIONES SCROLL
 ================================================ */
 const revealObs = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -410,15 +402,17 @@ const revealObs = new IntersectionObserver(entries => {
       revealObs.unobserve(entry.target);
     }
   });
-}, { threshold: 0.10 });
+}, { threshold: 0.08 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
 /* ================================================
-   FORMULARIO DE CONTACTO
+   FORMULARIO → mailto:luis.capin@ci-lex.com
+   Abre el cliente de correo con los datos pre-llenados.
 ================================================ */
 const form        = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
+const DEST_EMAIL  = 'luis.capin@ci-lex.com';
 
 if (form) {
   form.addEventListener('submit', e => {
@@ -426,30 +420,21 @@ if (form) {
     clearErrors();
 
     let valid = true;
-    const t = translations[currentLang];
-
     const name    = form.querySelector('#f-name');
     const email   = form.querySelector('#f-email');
     const message = form.querySelector('#f-message');
     const privacy = form.querySelector('#f-privacy');
+    const company = form.querySelector('#f-company');
+    const phone   = form.querySelector('#f-phone');
+    const area    = form.querySelector('#f-area');
 
-    if (!name.value.trim()) {
-      showError(name, 'err-name');
-      valid = false;
+    if (!name.value.trim()) { showError(name, 'err-name'); valid = false; }
+    if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+      showError(email, 'err-email'); valid = false;
     }
-    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email.value.trim() || !emailRe.test(email.value.trim())) {
-      showError(email, 'err-email');
-      valid = false;
-    }
-    if (!message.value.trim()) {
-      showError(message, 'err-message');
-      valid = false;
-    }
+    if (!message.value.trim()) { showError(message, 'err-message'); valid = false; }
     if (!privacy.checked) {
-      const errEl = document.getElementById('err-privacy');
-      if (errEl) errEl.style.display = 'block';
-      valid = false;
+      document.getElementById('err-privacy').style.display = 'block'; valid = false;
     }
 
     if (!valid) {
@@ -458,44 +443,72 @@ if (form) {
       return;
     }
 
-    const submitBtn = form.querySelector('[type="submit"]');
-    submitBtn.disabled = true;
-    submitBtn.classList.add('btn--loading');
+    /* Construir asunto y cuerpo del correo */
+    const t = translations[currentLang];
+    const subject = currentLang === 'es'
+      ? `Consulta Legal - ${name.value.trim()}`
+      : `Legal Inquiry - ${name.value.trim()}`;
 
+    const bodyLines = [
+      currentLang === 'es' ? 'Nombre:' : 'Name:',
+      name.value.trim(),
+      '',
+      currentLang === 'es' ? 'Empresa:' : 'Company:',
+      company.value.trim() || '—',
+      '',
+      currentLang === 'es' ? 'Correo de respuesta:' : 'Reply email:',
+      email.value.trim(),
+      '',
+      currentLang === 'es' ? 'Teléfono:' : 'Phone:',
+      phone.value.trim() || '—',
+      '',
+      currentLang === 'es' ? 'Área de interés:' : 'Area of interest:',
+      area.value || '—',
+      '',
+      currentLang === 'es' ? 'Mensaje:' : 'Message:',
+      message.value.trim(),
+    ];
+
+    const mailto = `mailto:${DEST_EMAIL}`
+      + `?subject=${encodeURIComponent(subject)}`
+      + `&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
+    /* Abrir cliente de correo */
+    window.location.href = mailto;
+
+    /* Mostrar confirmación y limpiar */
     setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.classList.remove('btn--loading');
       form.reset();
       formSuccess.hidden = false;
-      /* Mostrar texto de éxito en el idioma correcto */
-      formSuccess.innerHTML = t['form.success'];
+      formSuccess.querySelector('[data-i18n="form.success"]').innerHTML =
+        t['form.success'] || '✓ Mensaje listo para enviar.';
       formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       setTimeout(() => { formSuccess.hidden = true; }, 7000);
-    }, 1400);
+    }, 400);
   });
 
+  /* Limpiar errores en tiempo real */
   form.querySelectorAll('.form-input').forEach(input => {
     input.addEventListener('input', () => {
       input.classList.remove('error');
-      const errId = input.id.replace('f-', 'err-');
-      const errEl = document.getElementById(errId);
+      const errEl = document.getElementById(input.id.replace('f-', 'err-'));
       if (errEl) errEl.style.display = 'none';
     });
   });
 }
 
-function showError(inputEl, errId) {
-  inputEl.classList.add('error');
-  const errEl = document.getElementById(errId);
+function showError(el, id) {
+  el.classList.add('error');
+  const errEl = document.getElementById(id);
   if (errEl) errEl.style.display = 'block';
 }
 
 function clearErrors() {
   form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
-  form.querySelectorAll('.form-error').forEach(el => (el.style.display = 'none'));
+  form.querySelectorAll('.form-error').forEach(el => el.style.display = 'none');
 }
 
 /* ================================================
-   INIT — aplicar idioma guardado al cargar
+   INIT
 ================================================ */
 applyLang(currentLang);
